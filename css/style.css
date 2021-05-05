@@ -339,7 +339,7 @@ body {
   flex-direction: column; }
 
 .section-header {
-  background: url("../img/background.png");
+  background: url("../img/background.webp");
   flex-direction: column;
   font-family: "Officina";
   font-weight: 700;
@@ -347,7 +347,7 @@ body {
   .section-header-logo {
     text-transform: uppercase; }
     .section-header-logo-image {
-      background: url("../img/logotip_vp_2_15250.png");
+      background: url("../img/logotip_vp_2_15250.webp");
       width: 159px;
       height: 167px;
       margin-bottom: 24px; }
@@ -545,7 +545,7 @@ body {
         padding-left: 2px;
         letter-spacing: 1px; }
   .section-short_description-button {
-    background: url("/img/button.png");
+    background: url("/img/button.webp");
     font-family: "Officina";
     font-size: 22px;
     line-height: 1.2;
