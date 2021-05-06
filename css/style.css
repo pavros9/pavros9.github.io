@@ -1081,8 +1081,14 @@ body {
     display: flex; }
   .section-examples-house_reportage-first_house {
     padding-right: 28px; }
+  .section-examples-house_reportage-first_house .first_home {
+    width: 257px;
+    height: 173px; }
   .section-examples-house_reportage-first_house-badge {
     margin-left: 6px; }
+  .section-examples-house_reportage-second_house .second_home {
+    width: 257px;
+    height: 173px; }
   .section-examples-house_reportage-second_house-badge {
     margin-left: 7px; }
 
