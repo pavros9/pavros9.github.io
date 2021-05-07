@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вологодский плотник</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flickity.css">
     <link rel="prefetch" as="font">
 </head>
 
@@ -113,20 +114,50 @@
                 <h2 class="section-images-title">Проект дома «На озере»</h2>
                 <div class="section-images-all_houses">
                     <div class="section-images-all_houses-first_column">
-                        <div class="section-images-all_houses-first_column-main_house">
+                        <!-- <div class="section-images-all_houses-first_column-main_house">
                             <div class="section-images-all_houses-first_column-main_house-angle">
                                 <img class="icon" src="/img/angle_icon.webp" alt="">
                             </div>
                             <img class="back" src="/img/home_first.webp" alt="">
-                        </div>
-                        <div class="section-images-all_houses-first_column-first_side_houses">
-                            <img class="left_pointer" src="/img/left_pointer.webp" alt="">
-                            <img class="house_1" src="/img/house_1.webp" alt="">
-                            <img class="house_2" src="/img/house_2.webp" alt="">
-                            <img class="house_3" src="/img/house_3.webp" alt="">
-                            <img class="house_4" src="/img/house_4.webp" alt="">
-                            <img class="right_pointer" src="/img/right_pointer.webp" alt="">
-                            <div class="section-images-all_houses-first_column-green_line"> </div>
+                        </div> -->
+                        <!-- <div class="section-images-all_houses-first_column-first_side_houses">
+                            <div class="container-slides"> -->
+                        <!-- <img class="left_pointer" src="/img/left_pointer.webp" alt=""> -->
+                        <!-- <div class="carousel-cell_1">
+                                    <img class="house_1" src="/img/house_1.webp" alt="">
+                                </div>
+                                <div class="carousel-cel_2">
+                                    <img class="house_2" src="/img/house_2.webp" alt="">
+                                </div>
+                                <div class="carousel-cell_3">
+                                    <img class="house_3" src="/img/house_3.webp" alt="">
+                                </div>
+                                <div class="carousel-cell_4">
+                                    <img class="house_4" src="/img/house_4.webp" alt="">
+                                </div> -->
+
+                        <!-- <img class="right_pointer" src="/img/right_pointer.webp" alt=""> -->
+                        <!-- <div class="section-images-all_houses-first_column-green_line"> </div> -->
+                        <!-- </div>
+                        </div> -->
+                        <div class="box_for_carousel">
+                            <div class="section-images-all_houses-first_column-main_house-angle">
+                                <img class="icon" src="/img/angle_icon.webp" alt="">
+                            </div>
+                            <div class="carousel carousel-main" data-flickity>
+                                <div class="carousel-cell carousel-main_1"></div>
+                                <div class="carousel-cell carousel-main_2"></div>
+                                <div class="carousel-cell carousel-main_3"></div>
+                                <div class="carousel-cell carousel-main_4"></div>
+                            </div>
+
+                            <div class="carousel carousel-nav"
+                                data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false,  "imagesLoaded": true, "groupCells": true }'>
+                                <div class="carousel-cell carousel-cell_1"> </div>
+                                <div class="carousel-cell carousel-cell_2"> </div>
+                                <div class="carousel-cell carousel-cell_3"></div>
+                                <div class="carousel-cell carousel-cell_4"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="section-images-all_houses-second_column">
@@ -382,6 +413,9 @@
 
     <!-- JS-->
     <script src="/js/script.js"></script>
+
+    <!-- Flickity -->
+    <script src="/js/flickity.pkgd.min.js"></script>
 
 </body>
 
