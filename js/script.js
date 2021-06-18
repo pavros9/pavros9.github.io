@@ -27,7 +27,7 @@ $(document).ready(function () {
     resizeBlock();
   });
 
-});
+
 
 
 (function($) {
@@ -57,5 +57,5 @@ $(document).ready(function () {
     }
 
 })(jQuery);
-
+});
 
