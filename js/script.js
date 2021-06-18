@@ -27,13 +27,35 @@ $(document).ready(function () {
     resizeBlock();
   });
 
- 
-  const slider = document.querySelector(".slider input")
-  const img = document.querySelector(".images .img-2")
-  const dragLine = document.querySelector(".slider .drag-line")
-  slider.oninput = ()=> {
-    let sliderVal = slider.value
-    dragLine.style.left = sliderVal + "%";
-    img.style.width = sliderVal + "%";
-  }
 });
+
+
+(function($) {
+    var $dragMe = $(".dragme"),
+    $container = $(".sl-container"),
+    $viewBefore = $(".view-before");
+    $dragMe.draggable({
+        containment: "parent",
+        drag: function() {
+            $viewBefore.css({
+                width : parseFloat($(this).css('left')) + 2
+            });
+        }
+    });
+    $container.on("click", function(event) {
+        var eventLeft = event.pageX - $container.offset().left - 15;
+        animateTo(eventLeft);
+    });
+    animateTo("50%");
+    function animateTo(_left) {
+        $dragMe.animate({
+            left: _left
+        }, 'slow', 'linear');
+        $viewBefore.animate({
+            width: _left
+        }, 'slow', 'linear');
+    }
+
+})(jQuery);
+
+
