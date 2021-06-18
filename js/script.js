@@ -27,7 +27,6 @@ $(document).ready(function () {
     resizeBlock();
   });
 
-<<<<<<< HEAD
 });
 
 
@@ -60,15 +59,3 @@ $(document).ready(function () {
 })(jQuery);
 
 
-=======
- 
-  const slider = document.querySelector(".slider input")
-  const img = document.querySelector(".images .img-2")
-  const dragLine = document.querySelector(".slider .drag-line")
-  slider.oninput = ()=> {
-    let sliderVal = slider.value
-    dragLine.style.left = sliderVal + "%";
-    img.style.width = sliderVal + "%";
-  }
-});
->>>>>>> d3d5d5e4d9985a7f54db68d09a41c9032101f268
