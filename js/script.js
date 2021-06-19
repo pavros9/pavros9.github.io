@@ -29,10 +29,6 @@ $(document).ready(function () {
   
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 6a78e1035cb926ba4ef211657b06e7650f5935c7
 
 
 (function($) {
@@ -62,10 +58,5 @@ $(document).ready(function () {
     }
 
 })(jQuery);
-<<<<<<< HEAD
 
 });
-=======
-});
-
->>>>>>> 6a78e1035cb926ba4ef211657b06e7650f5935c7
