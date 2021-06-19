@@ -26,8 +26,9 @@ $(document).ready(function () {
   $(document).ready(function () {
     resizeBlock();
   });
+  
 
-});
+
 
 
 (function($) {
@@ -58,4 +59,4 @@ $(document).ready(function () {
 
 })(jQuery);
 
-
+});

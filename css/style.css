@@ -816,6 +816,9 @@ body {
 .plug {
   overflow: hidden;
   margin: auto; }
+  @media (max-width: 1919px) {
+    .plug .flickity-prev-next-button {
+      display: none; } }
 
 * {
   box-sizing: border-box; }
@@ -920,6 +923,74 @@ body {
   width: 139px;
   height: 89px;
   margin-top: 22px; }
+
+@media (max-width: 1919px) {
+  .caro_nav-first_house {
+    width: 159px;
+    height: 108px; }
+  .caro_nav-second_house {
+    width: 124px;
+    height: 84px; }
+  .caro_nav-third_house {
+    width: 130px;
+    height: 84px; }
+  .caro_nav-fourth_house {
+    width: 131px;
+    height: 85px; }
+  .carousel-main {
+    margin-bottom: 13px; }
+  .flickity-page-dots {
+    bottom: -16px; }
+    .flickity-page-dots .dot {
+      width: 158px; } }
+
+@media (max-width: 1199px) {
+  .caro_nav-first_house {
+    width: 154px;
+    height: 104px; }
+  .caro_nav-second_house {
+    width: 120px;
+    height: 82px; }
+  .caro_nav-third_house {
+    width: 127px;
+    height: 82px; }
+  .caro_nav-fourth_house {
+    width: 127px;
+    height: 83px; }
+  .carousel-main {
+    margin-bottom: 8px; }
+  .flickity-page-dots {
+    bottom: -16px; }
+    .flickity-page-dots .dot {
+      width: 154px;
+      margin-right: 5px;
+      margin-left: 0; } }
+
+@media (max-width: 1023px) {
+  .carousel-nav .carousel-cell {
+    background-size: cover; }
+  .caro_nav-first_house {
+    width: 78px;
+    height: 53px; }
+  .caro_nav-second_house {
+    width: 60px;
+    height: 41px; }
+  .caro_nav-third_house {
+    width: 63px;
+    height: 41px; }
+  .caro_nav-fourth_house {
+    width: 64px;
+    height: 41px; }
+  .carousel-main {
+    margin-bottom: 8px; }
+  .flickity-page-dots {
+    bottom: -16px; }
+    .flickity-page-dots .dot {
+      width: 77px;
+      margin-right: 26px;
+      margin-left: 0px; }
+  .flickity-page-dots :last-child {
+    margin-right: 0; } }
 
 .section-images {
   flex-direction: row; }
@@ -1852,7 +1923,7 @@ body {
 @media (max-width: 1199px) {
   .plug {
     width: 638px;
-    height: 557x; } }
+    height: 557px; } }
 
 @media (max-width: 1023px) {
   .plug {
