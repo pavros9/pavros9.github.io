@@ -2,7 +2,6 @@ $(document).ready(function () {
 
   $('.section-header-burger').click(function (event) {
     $('.section-header-burger, .section-header').toggleClass('active');
-    // $(".section-header").removeClass('active');
     if ($('.section-header-burger').hasClass('active')) {
         $('.section-header-burger').appendTo($('.menu_close'));
      
@@ -56,7 +55,6 @@ $(document).ready(function () {
             width: _left
         }, 'slow', 'linear');
     }
-
 })(jQuery);
 
 });
