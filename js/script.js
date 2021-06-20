@@ -26,10 +26,6 @@ $(document).ready(function () {
     resizeBlock();
   });
   
-
-
-
-
 (function($) {
     var $dragMe = $(".dragme"),
     $container = $(".sl-container"),
