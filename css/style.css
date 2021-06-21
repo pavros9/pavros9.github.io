@@ -2634,7 +2634,6 @@ body .visually-hidden {
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .section-header {
-<<<<<<< HEAD
     background: url("../img/background.jpg") no-repeat center top;
   }
   .section-header-logo-image {
@@ -2647,14 +2646,6 @@ body .visually-hidden {
     background: url(../img/header_320.jpg) 50% / cover no-repeat;
   }
 }
-=======
-    background: url("/img/background.jpg") no-repeat center top; }
-    .section-header-logo-image {
-      background: url("/img/logotip_vp_2_15250.jpg") no-repeat; } }
-  @media screen and (-ms-high-contrast: active) and (max-width: 1023px), (-ms-high-contrast: none) and (max-width: 1023px) {
-    .section-header {
-      background: url("/img/header_320.jpg") 50%/cover no-repeat; } }
->>>>>>> 73f0f07a2f0c3332acbad41714f24250f774661c
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .section-short_description-button {
