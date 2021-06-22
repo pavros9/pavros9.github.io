@@ -439,7 +439,17 @@
                   <img src="/img/house_before.png" alt="" />
                 </div>
                 <div class="view view-after">
-                  <img src="/img/Background.png" alt="" />
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="/img/Background_320.png"
+                    />
+                    <source
+                      media="(min-width: 321px)"
+                      srcset="/img/Background.png"
+                    />
+                    <img src="/img/Background.png" alt="" />
+                  </picture>
                 </div>
 
                 <div class="dragme">
