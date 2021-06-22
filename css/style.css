@@ -305,30 +305,35 @@ template {
 
 @font-face {
   font-family: "Officina";
+  src: url("../fonts/OfficinaSerifBookC.eot");
   src: url("../fonts/OfficinaSerifBookC.ttf") format("truetype"), url("../fonts/OfficinaSerifBookC.otf") format("embedded-opentype");
   font-weight: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Roboto_Light";
+  src: url("../fonts/Roboto-Light.eot");
   src: url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.otf") format("embedded-opentype");
   font-weight: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Roboto_Regular";
+  src: url("../fonts/Roboto-Regular.eot");
   src: url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.otf") format("embedded-opentype");
   font-weight: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Roboto_Bold";
+  src: url("../fonts/Roboto-Bold.eot");
   src: url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.otf") format("embedded-opentype");
   font-weight: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "PT_Sans";
+  src: url("../fonts/PT_Sans.eot");
   src: url("../fonts/PT_Sans.ttf") format("truetype"), url("../fonts/PT_Sans.otf") format("embedded-opentype");
   font-weight: normal;
   font-display: swap; }
