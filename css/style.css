@@ -307,35 +307,35 @@ template {
   font-family: "Officina";
   src: url("../fonts/OfficinaSerifBookC.eot");
   src: url("../fonts/OfficinaSerifBookC.ttf") format("truetype"), url("../fonts/OfficinaSerifBookC.woff") format("woff"), url("../fonts/OfficinaSerifBookC.otf") format("embedded-opentype");
-  font-weight: normal;
+  font-weight: 700;
   font-display: swap; }
 
 @font-face {
   font-family: "Roboto_Light";
   src: url("../fonts/Roboto-Light.eot");
   src: url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.otf") format("embedded-opentype");
-  font-weight: normal;
+  font-weight: 300;
   font-display: swap; }
 
 @font-face {
   font-family: "Roboto_Regular";
   src: url("../fonts/Roboto-Regular.eot");
   src: url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.otf") format("embedded-opentype");
-  font-weight: normal;
+  font-weight: 400;
   font-display: swap; }
 
 @font-face {
   font-family: "Roboto_Bold";
   src: url("../fonts/Roboto-Bold.eot");
   src: url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.otf") format("embedded-opentype");
-  font-weight: normal;
+  font-weight: 700;
   font-display: swap; }
 
 @font-face {
   font-family: "PT_Sans";
   src: url("../fonts/PT_Sans.eot");
   src: url("../fonts/PT_Sans.ttf") format("truetype"), url("../fonts/PT_Sans.woff") format("woff"), url("../fonts/PT_Sans.otf") format("embedded-opentype");
-  font-weight: normal;
+  font-weight: 400;
   font-display: swap; }
 
 body {
