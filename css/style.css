@@ -955,12 +955,9 @@ body {
 
 .caro_main-first_house {
   background: url("/img/home_first.webp") center no-repeat; }
-  @media (min-width: ((-ms-high-contrast: none), (-ms-high-contrast: active))) {
+  @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .caro_main-first_house {
       background: url("/img/home_first.jpg") center no-repeat; } }
-  @media (max-width: ((-ms-high-contrast: none), (-ms-high-contrast: active))) {
-    .caro_main-first_house {
-      background: url("/img/home_first_320.jpg") center no-repeat; } }
 
 .caro_main-second_house {
   background: url("/img/house_2.jpg") center no-repeat; }
