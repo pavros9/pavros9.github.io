@@ -1416,7 +1416,6 @@ body {
   font-family: "Officina";
   font-size: 22px;
   line-height: 1.2;
-  font-weight: 700;
   color: #1c1c1c;
   display: flex; }
 
@@ -1940,6 +1939,9 @@ body {
         padding-left: 13px;
         padding-top: 3px; } }
 
+.section-footer .bold {
+  font-family: "Roboto_Bold"; }
+
 .section-footer .green_text {
   color: #006022;
   margin-bottom: 23px; }
@@ -1956,13 +1958,10 @@ body {
     font-family: "Roboto_Light";
     font-size: 15px;
     color: #494949;
-    font-weight: 300;
     width: 250px; }
   .section-footer-base-production {
     padding-right: 72px;
     line-height: 29px; }
-    .section-footer-base-production li {
-      margin-bottom: 2px; }
   .section-footer-base-project {
     line-height: 29px;
     padding-right: 82px;
@@ -1981,8 +1980,6 @@ body {
       margin-top: 10px; }
     .section-footer-base-address .original_address {
       margin-top: 6px; }
-      .section-footer-base-address .original_address li {
-        margin-bottom: 2px; }
       .section-footer-base-address .original_address .green_text {
         margin-bottom: 23px; }
   .section-footer-base-contacts_net {
