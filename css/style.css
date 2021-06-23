@@ -353,7 +353,6 @@ body {
   height: 100%;
   flex-direction: column;
   font-family: "Officina";
-  font-weight: 700;
   position: fixed; }
   .section-header-logo {
     margin-bottom: 82px;
@@ -439,7 +438,6 @@ body {
       color: white;
       font-size: 13px;
       line-height: 20px;
-      font-weight: 700;
       text-transform: uppercase; }
     .section-header-burger:before, .section-header-burger:after {
       content: "";
@@ -573,7 +571,6 @@ body {
   font-family: "Officina";
   font-size: 60px;
   line-height: 60px;
-  font-weight: 700;
   color: #503314;
   margin-top: 29px; }
 
@@ -680,7 +677,6 @@ body {
       .section-short_description-price ul .side {
         font-family: "Officina";
         font-size: 30px;
-        font-weight: 700;
         color: #006022;
         padding-left: 2px; }
   .section-short_description-button {
@@ -688,7 +684,6 @@ body {
     font-family: "Officina";
     font-size: 22px;
     line-height: 1.2;
-    font-weight: 700;
     color: #ffffff;
     width: 255px;
     height: 66px;
@@ -1111,7 +1106,6 @@ body {
     font-family: "Officina";
     font-size: 60px;
     line-height: 22px;
-    font-weight: 700;
     color: #503314;
     padding-left: 28px;
     letter-spacing: 2px; }
@@ -1394,7 +1388,6 @@ body {
     font-family: "Officina";
     font-size: 30px;
     line-height: 1.2;
-    font-weight: 700;
     color: #ffffff; }
 
 .section-equipment .icon_1 {
@@ -1548,7 +1541,6 @@ body {
     font-family: "Officina";
     font-size: 30px;
     line-height: 1.2;
-    font-weight: 700;
     color: #1c1c1c;
     text-align: center;
     margin-top: 37px;
@@ -1688,7 +1680,6 @@ body {
   font-family: "Officina";
   font-size: 30px;
   line-height: 1.2;
-  font-weight: 700;
   color: #1c1c1c; }
 
 .section-full_description-text {
@@ -1787,7 +1778,6 @@ body {
   font-family: "Officina";
   font-size: 30px;
   line-height: 1.2;
-  font-weight: 700;
   color: #1c1c1c;
   margin-bottom: 31px;
   letter-spacing: 0.8px; }
@@ -2012,7 +2002,6 @@ body {
   margin-top: 36px;
   font-size: 12px;
   line-height: 14px;
-  font-weight: 400;
   color: #494949;
   margin-right: -83px;
   margin-bottom: 22px; }
