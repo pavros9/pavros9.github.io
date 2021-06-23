@@ -348,7 +348,7 @@ body {
     margin: -1px; }
 
 .section-header {
-  background: url("../img/background.jpg") no-repeat center top;
+  background: url("../img/background_header.jpg") no-repeat center top;
   background-size: cover;
   height: 100%;
   flex-direction: column;
@@ -358,13 +358,13 @@ body {
     margin-bottom: 82px;
     text-transform: uppercase; }
     .section-header-logo-image {
-      background: url("../img/logotip_vp_2_15250.webp") no-repeat;
+      background: url("../img/logotip_vp_2_15250.webp") center no-repeat;
       width: 159px;
       height: 167px;
       margin-bottom: 24px; }
       @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .section-header-logo-image {
-          background: url("../img/logotip_vp_2_15250.jpg"); } }
+          background: url("../img/logotip_vp_2_15250.jpg") center no-repeat; } }
     .section-header-logo-tagline {
       font-size: 15px;
       line-height: 20px;
@@ -2092,9 +2092,8 @@ body {
   .sl-container .view-after {
     z-index: 100; }
     .sl-container .view-after img {
-      width: 995px;
-      margin-top: -82px;
-      margin-left: -54px; }
+      width: 838px;
+      margin-top: 5px; }
   .sl-container .view-before {
     z-index: 200;
     width: 100px; }
@@ -2136,8 +2135,8 @@ body {
           height: 8px;
           margin-top: 6px; }
       .sl-container .view-after img {
-        width: 407px;
-        margin-top: -45px;
-        margin-left: -49px; }
+        width: 344px;
+        margin-top: -10px;
+        margin-left: -31px; }
       .sl-container .view-before img {
         width: 320px; } }
