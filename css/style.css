@@ -967,19 +967,19 @@ body {
   background: url("/img/house_2.webp") no-repeat; }
   @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .caro_main-second_house {
-      background: url("/img/house_2.jpg"); } }
+      background: url("/img/house_2.jpg") no-repeat; } }
 
 .caro_main-third_house {
   background: url("/img/house_3.webp") no-repeat; }
   @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .caro_main-third_house {
-      background: url("/img/house_3.jpg"); } }
+      background: url("/img/house_3.jpg") no-repeat; } }
 
 .caro_main-fourth_house {
   background: url("/img/house_4.webp") no-repeat; }
   @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .caro_main-fourth_house {
-      background: url("/img/house_4.jpg"); } }
+      background: url("/img/house_4.jpg") no-repeat; } }
 
 .carousel-main .carousel-cell {
   background-size: contain; }
@@ -992,7 +992,7 @@ body {
   margin-top: 10px; }
   @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .caro_nav-first_house {
-      background: url("/img/house_1.jpg"); } }
+      background: url("/img/house_1.jpg") no-repeat; } }
 
 .caro_nav-second_house {
   background: url("/img/house_2.webp") no-repeat;
@@ -1002,7 +1002,7 @@ body {
   margin-top: 15px; }
   @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .caro_nav-second_house {
-      background: url("/img/house_2.jpg"); } }
+      background: url("/img/house_2.jpg") no-repeat; } }
 
 .caro_nav-third_house {
   background: url("/img/house_3.webp") no-repeat;
@@ -1012,7 +1012,7 @@ body {
   margin-top: 22px; }
   @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .caro_nav-third_house {
-      background: url("/img/house_3.jpg"); } }
+      background: url("/img/house_3.jpg") no-repeat; } }
 
 .caro_nav-fourth_house {
   background: url("/img/house_4.webp") no-repeat;
@@ -1022,7 +1022,7 @@ body {
   margin-top: 22px; }
   @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .caro_nav-fourth_house {
-      background: url("/img/house_4.jpg"); } }
+      background: url("/img/house_4.jpg") no-repeat; } }
 
 @media (max-width: 1919px) {
   .carousel {
