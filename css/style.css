@@ -979,7 +979,7 @@ body {
   margin-top: 10px; }
   @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .caro_nav-first_house {
-      background: url("/img/img/house_1.jpg"); } }
+      background: url("/img/house_1.jpg"); } }
 
 .caro_nav-second_house {
   background: url("/img/house_2.webp") no-repeat;
@@ -989,7 +989,7 @@ body {
   margin-top: 15px; }
   @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .caro_nav-second_house {
-      background: url("/img/img/house_2.jpg"); } }
+      background: url("/img/house_2.jpg"); } }
 
 .caro_nav-third_house {
   background: url("/img/house_3.webp") no-repeat;
@@ -999,7 +999,7 @@ body {
   margin-top: 22px; }
   @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .caro_nav-third_house {
-      background: url("/img/img/house_3.jpg"); } }
+      background: url("/img/house_3.jpg"); } }
 
 .caro_nav-fourth_house {
   background: url("/img/house_4.webp") no-repeat;
@@ -1009,7 +1009,7 @@ body {
   margin-top: 22px; }
   @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .caro_nav-fourth_house {
-      background: url("/img/img/house_4.jpg"); } }
+      background: url("/img/house_4.jpg"); } }
 
 @media (max-width: 1919px) {
   .carousel {
