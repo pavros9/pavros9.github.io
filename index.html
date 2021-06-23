@@ -436,7 +436,11 @@
 
               <div class="sl-container">
                 <div class="view view-before">
-                  <img src="/img/house_before.png" alt="" />
+                  <picture>
+                    <source srcset="/img/house_before.webp" type="image/webp" />
+                    <source srcset="/img/house_before.png" type="image/png" />
+                    <img src="/img/house_before.png" alt="" />
+                  </picture>
                 </div>
                 <div class="view view-after">
                   <picture>
@@ -445,7 +449,7 @@
                       srcset="/img/Background_320.png"
                     />
                     <source
-                      media="(min-width: 321px and screen and (-ms-high-contrast: none), (-ms-high-contrast: active))"
+                      media="(min-width: 321px screen and (-ms-high-contrast: none), (-ms-high-contrast: active))"
                       srcset="/img/Background.png"
                     />
                     <source
@@ -456,7 +460,6 @@
                       media="(max-width: 320px)"
                       srcset="/img/Background_320.webp"
                     />
-
                     <img src="/img/Background.png" alt="" />
                   </picture>
                 </div>
@@ -831,7 +834,7 @@
                       alt=""
                     />
                   </picture>
-                  <div class="section-footer-after_image">
+                  <div class="section">
                     <div class="section-footer-base-contacts_net-contacts">
                       <ul class="original_contacts">
                         <li class="first_contacts">
