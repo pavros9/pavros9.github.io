@@ -467,7 +467,11 @@ body {
       display: none; } }
   @media (max-width: 1023px) {
     .section-header {
-      background: url("../img/header_320.webp") 50%/cover no-repeat; }
+      background: url("../img/header_320.webp") 50%/cover no-repeat; } }
+  @media screen and (max-width: 1023px) and (-ms-high-contrast: none), (max-width: 1023px) and (-ms-high-contrast: active) {
+    .section-header {
+      background: url("../img/header_320.jpg"); } }
+  @media (max-width: 1023px) {
       .section-header-logo {
         margin-bottom: 0;
         height: 100%; }
