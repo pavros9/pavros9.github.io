@@ -2000,28 +2000,25 @@ body {
 
 .section-footer-side {
   display: flex;
-  margin-top: 36px;
+  margin-top: 52px;
   font-size: 12px;
   line-height: 14px;
   color: #494949;
-  margin-right: -83px;
-  margin-bottom: 22px; }
+  margin-right: -83px; }
   .section-footer-side-copyright {
     padding-right: 776px;
     font-family: "PT_Sans";
-    margin-top: 15px;
-    margin-left: -8px; }
+    margin-left: -8px;
+    margin-bottom: 23px; }
   .section-footer-side-about_site {
     font-family: "Arial";
-    display: flex;
-    margin-top: 11px; }
+    display: flex; }
     .section-footer-side-about_site img {
-      margin-top: 2px;
       margin-right: 9px;
       width: 74px;
       height: 23px; }
     .section-footer-side-about_site-text {
-      margin-top: 14px;
+      margin-top: 10px;
       padding-left: 2px;
       text-decoration: underline;
       font-style: italic; }
