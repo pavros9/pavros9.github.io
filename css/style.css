@@ -2101,7 +2101,6 @@ body {
   .sl-container .view-after {
     z-index: 100; }
     .sl-container .view-after img {
-      width: 838px;
       margin-top: 5px; }
   .sl-container .view-before {
     z-index: 200;
@@ -2145,7 +2144,14 @@ body {
           margin-top: 6px; }
       .sl-container .view-after img {
         width: 344px;
+        height: 219px;
         margin-top: -10px;
         margin-left: -31px; }
       .sl-container .view-before img {
         width: 320px; } }
+  @media (max-width: 320px) {
+    .sl-container .view-after img {
+      width: 407px;
+      height: 325px;
+      margin-top: -42px;
+      margin-left: -52px; } }
