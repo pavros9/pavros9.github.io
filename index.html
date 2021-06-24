@@ -445,20 +445,24 @@
                 <div class="view view-after">
                   <picture>
                     <source
-                      media="((max-width: 320px) and screen and (-ms-high-contrast: none), (-ms-high-contrast: active))"
-                      srcset="/img/Background_320.png"
-                    />
-                    <source
-                      media="((min-width: 321px) screen and (-ms-high-contrast: none), (-ms-high-contrast: active))"
-                      srcset="/img/Background.png"
-                    />
-                    <source
                       media="(min-width: 321px)"
                       srcset="/img/Background.webp"
+                      type="image/webp"
                     />
                     <source
                       media="(max-width: 320px)"
                       srcset="/img/Background_320.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 320px) "
+                      srcset="/img/Background_320.png"
+                      type="image/png"
+                    />
+                    <source
+                      media="(min-width: 321px)"
+                      srcset="/img/Background.png"
+                      type="image/png"
                     />
                     <img src="/img/Background.png" alt="" />
                   </picture>
