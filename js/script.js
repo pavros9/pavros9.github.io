@@ -1,8 +1,7 @@
 $(document).ready(function () {
-
+/// --- menu-burger
   $('.section-header-burger').click(function (event) {
     $('.section-header-burger, .section-header').toggleClass('active');
-    // $(".section-header").removeClass('active');
     if ($('.section-header-burger').hasClass('active')) {
         $('.section-header-burger').appendTo($('.menu_close'));
      
@@ -10,7 +9,9 @@ $(document).ready(function () {
         $('.section-header-burger').appendTo($('.menu_open')); 
     }
   });
+/// --- menu-burger ---
 
+/// --- moves section-inner-short_description in other block ---
   function resizeBlock() {
     if (window.matchMedia("screen and (max-width: 1919px)").matches) {
       $('.section-inner-short_description').appendTo($('.section-short_description-right'));
@@ -26,14 +27,34 @@ $(document).ready(function () {
   $(document).ready(function () {
     resizeBlock();
   });
+/// --- moves ---
 
- 
-  const slider = document.querySelector(".slider input")
-  const img = document.querySelector(".images .img-2")
-  const dragLine = document.querySelector(".slider .drag-line")
-  slider.oninput = ()=> {
-    let sliderVal = slider.value
-    dragLine.style.left = sliderVal + "%";
-    img.style.width = sliderVal + "%";
-  }
+/// --- slider ---
+(function($) {
+    var $dragMe = $(".dragme"),
+    $container = $(".sl-container"),
+    $viewBefore = $(".view-before");
+    $dragMe.draggable({
+        containment: "parent",
+        drag: function() {
+            $viewBefore.css({
+                width : parseFloat($(this).css('left')) + 2
+            });
+        }
+    });
+    $container.on("click", function(event) {
+        var eventLeft = event.pageX - $container.offset().left - 15;
+        animateTo(eventLeft);
+    });
+    animateTo("50%");
+    function animateTo(_left) {
+        $dragMe.animate({
+            left: _left
+        }, 'slow', 'linear');
+        $viewBefore.animate({
+            width: _left
+        }, 'slow', 'linear');
+    }
+})(jQuery);
+/// --- slider ---
 });
