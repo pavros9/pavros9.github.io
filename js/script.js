@@ -1,17 +1,11 @@
 $(document).ready(function () {
-/// --- menu-burger
+  /// --- menu-burger
   $('.section-header-burger').click(function (event) {
     $('.section-header-burger, .section-header').toggleClass('active');
-    if ($('.section-header-burger').hasClass('active')) {
-        $('.section-header-burger').appendTo($('.menu_close'));
-     
-    } else {
-        $('.section-header-burger').appendTo($('.menu_open')); 
-    }
   });
-/// --- menu-burger ---
+  /// --- menu-burger ---
 
-/// --- moves section-inner-short_description in other block ---
+  /// --- moves section-inner-short_description in other block ---
   function resizeBlock() {
     if (window.matchMedia("screen and (max-width: 1919px)").matches) {
       $('.section-inner-short_description').appendTo($('.section-short_description-right'));
@@ -27,34 +21,34 @@ $(document).ready(function () {
   $(document).ready(function () {
     resizeBlock();
   });
-/// --- moves ---
+  /// --- moves ---
 
-/// --- slider ---
-(function($) {
+  /// --- slider ---
+  (function ($) {
     var $dragMe = $(".dragme"),
-    $container = $(".sl-container"),
-    $viewBefore = $(".view-before");
+      $container = $(".sl-container"),
+      $viewBefore = $(".view-before");
     $dragMe.draggable({
-        containment: "parent",
-        drag: function() {
-            $viewBefore.css({
-                width : parseFloat($(this).css('left')) + 2
-            });
-        }
+      containment: "parent",
+      drag: function () {
+        $viewBefore.css({
+          width: parseFloat($(this).css('left')) + 2
+        });
+      }
     });
-    $container.on("click", function(event) {
-        var eventLeft = event.pageX - $container.offset().left - 15;
-        animateTo(eventLeft);
+    $container.on("click", function (event) {
+      var eventLeft = event.pageX - $container.offset().left - 15;
+      animateTo(eventLeft);
     });
     animateTo("50%");
     function animateTo(_left) {
-        $dragMe.animate({
-            left: _left
-        }, 'slow', 'linear');
-        $viewBefore.animate({
-            width: _left
-        }, 'slow', 'linear');
+      $dragMe.animate({
+        left: _left
+      }, 'slow', 'linear');
+      $viewBefore.animate({
+        width: _left
+      }, 'slow', 'linear');
     }
-})(jQuery);
-/// --- slider ---
+  })(jQuery);
+  /// --- slider ---
 });
