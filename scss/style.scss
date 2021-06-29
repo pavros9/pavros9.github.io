@@ -5,9 +5,10 @@
 @font-face {
   font-family: "Officina";
   src: url("../fonts/OfficinaSerifBookC.eot");
-  src: url("../fonts/OfficinaSerifBookC.ttf") format("truetype"),
-    url("../fonts/OfficinaSerifBookC.woff") format("woff"),
-    url("../fonts/OfficinaSerifBookC.otf") format("embedded-opentype");
+  src: url("../fonts/OfficinaSerifBookC.otf") format("embedded-opentype"),
+    url("../fonts/OfficinaSerifBookC.woff2") format('woff2'),
+    url("../fonts/OfficinaSerifBookC.ttf") format("truetype"),
+    url("../fonts/OfficinaSerifBookC.woff") format("woff");
   font-weight: 700;
   font-display: swap;
 }
@@ -15,9 +16,10 @@
 @font-face {
   font-family: "Roboto_Light";
   src: url("../fonts/Roboto-Light.eot");
-  src: url("../fonts/Roboto-Light.ttf") format("truetype"),
-    url("../fonts/Roboto-Light.woff") format("woff"),
-    url("../fonts/Roboto-Light.otf") format("embedded-opentype");
+  src: url("../fonts/Roboto-Light.otf") format("embedded-opentype"),
+  url("../fonts/Roboto-Light.woff2") format('woff2'),
+  url("../fonts/Roboto-Light.ttf") format("truetype"),
+    url("../fonts/Roboto-Light.woff") format("woff");
   font-weight: 300;
   font-display: swap;
 }
@@ -25,9 +27,10 @@
 @font-face {
   font-family: "Roboto_Regular";
   src: url("../fonts/Roboto-Regular.eot");
-  src: url("../fonts/Roboto-Regular.ttf") format("truetype"),
-    url("../fonts/Roboto-Regular.woff") format("woff"),
-    url("../fonts/Roboto-Regular.otf") format("embedded-opentype");
+  src: url("../fonts/Roboto-Regular.otf") format("embedded-opentype"),
+  url("../fonts/Roboto-Regular.woff2") format('woff2'),
+    url("../fonts/Roboto-Regular.ttf") format("truetype"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: 400;
   font-display: swap;
 }
@@ -35,9 +38,10 @@
 @font-face {
   font-family: "Roboto_Bold";
   src: url("../fonts/Roboto-Bold.eot");
-  src: url("../fonts/Roboto-Bold.ttf") format("truetype"),
-    url("../fonts/Roboto-Bold.woff") format("woff"),
-    url("../fonts/Roboto-Bold.otf") format("embedded-opentype");
+  src: url("../fonts/Roboto-Bold.otf") format("embedded-opentype"),
+  url("../fonts/Roboto-Bold.woff2") format('woff2'),
+    url("../fonts/Roboto-Bold.ttf") format("truetype"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
   font-weight: 700;
   font-display: swap;
 }
@@ -45,9 +49,10 @@
 @font-face {
   font-family: "PT_Sans";
   src: url("../fonts/PT_Sans.eot");
-  src: url("../fonts/PT_Sans.ttf") format("truetype"),
-    url("../fonts/PT_Sans.woff") format("woff"),
-    url("../fonts/PT_Sans.otf") format("embedded-opentype");
+  src:  url("../fonts/PT_Sans.otf") format("embedded-opentype"),
+    url("../fonts/PT_Sans.woff") format('woff2'),
+    url("../fonts/PT_Sans.ttf") format("truetype"),
+    url("../fonts/PT_Sans.woff") format("woff");
   font-weight: 400;
   font-display: swap;
 }
@@ -75,7 +80,10 @@ body {
   }
 }
 
-/// -- header --
+/// -- header // --
+.section-header-burger:before, .section-header-burger:after {
+  transition: all 0.3s ease 0s;
+}
 .section-header {
   background: url("../img/background_header.jpg") no-repeat center top;
   background-size: cover;
@@ -146,6 +154,10 @@ body {
   }
   &-burger {
     display: none;
+    span {
+      transition: all 0.3s ease 0s;
+    }
+    
   }
   @media (max-width: $screen-lg-max) {
     z-index: 400;
@@ -157,6 +169,7 @@ body {
         width: 70px;
         height: 74px;
         background-size: 100%;
+        transition-duration: 0.5s;
       }
       &-tagline {
         display: none;
@@ -203,7 +216,7 @@ body {
       width: 100%;
       height: 2px;
       left: 0;
-      transition: all 0.3s ease 0s;
+      // transition: all 0.3s ease 1s;
     }
     &-burger:before {
       top: 0;
@@ -247,12 +260,14 @@ body {
       top: 28px;
       margin-left: auto;
       margin-right: 31px;
+      order: 3;
       h3 {
         display: none;
       }
     }
     &-burger.active {
       z-index: 3;
+      margin-right: 16px;
     }
     &-menu {
       display: none;
@@ -310,8 +325,8 @@ body {
         transition: none;
         text-align: center;
         z-index: 1;
-        margin: auto;
-        padding-top: 30px;
+        padding-top: 58px;
+        margin-left: 40px;
       }
       &-burger {
         left: 0;
@@ -357,7 +372,7 @@ body {
   .section-header .active {
     visibility: visible;
     opacity: 1;
-    transition-delay: 0s;
+    // transition-delay: 0s;
   }
   .section-inner-header {
     margin-top: 14px;
@@ -439,7 +454,7 @@ body {
 /// -- short-description --
 .section-short_description {
   background-color: rgba(226, 226, 226, 0.27);
-  width: 402px;
+  // width: 402px;
   &-right {
     max-width: 283px;
   }
@@ -644,17 +659,18 @@ body {
   .base {
     display: flex;
     flex-direction: column;
-    margin-left: 220px;
+    padding-left: 220px;
   }
 }
 
 @media (max-width: $screen-md-max) {
   .section-header {
     width: 83px;
+    transition-duration: 0.5s;
   }
 
   .base {
-    margin-left: 83px;
+    padding-left: 83px;
   }
   .section-short_description {
     &-about_project {
@@ -680,7 +696,7 @@ body {
     display: block;
   }
   .base {
-    margin-left: 0;
+    padding-left: 0;
   }
   .section-short_description {
     &-right {
@@ -726,21 +742,26 @@ body {
 
 /// -- base--
 .base {
-  min-width: 320px;
+  width: 100%;
+  // min-width: 320px;
   @media (min-width: $screen-xl) {
-    max-width: 1140px;
+  //   max-width: 1140px;
   }
   @media (max-width: $screen-lg-max) {
-    max-width: 980px;
+    // max-width: 980px;
   }
 }
 .base-inner {
+  margin: auto;
   margin-top: 23px;
+  
   @media (min-width: $screen-xl) {
     padding-left: 28px;
+    width: 1140px;
   }
   @media (max-width: $screen-lg-max) {
     padding-left: 22px;
+    width: 980px;
   }
   @media (max-width: $screen-md-max) {
     padding-left: 11px;
@@ -748,6 +769,7 @@ body {
   @media (max-width: $screen-sm-max) {
     margin-top: 0;
     padding-left: 0;
+    width: 320px;
   }
 }
 
@@ -790,7 +812,7 @@ body {
 }
 .flickity {
   &-page-dots {
-    bottom: -16px;
+    bottom: -163px;
     .dot {
       width: 167px;
       height: 2px;
@@ -843,14 +865,11 @@ body {
         height: 425px;
       }
       @media (max-width: $screen-sm-max) {
-        height: calc(218px + (425 - 218) * ((100vw - 320px) / (1024 - 320)));
+        height: 215px;
       }
       @media (max-width: $screen-sm) {
         height: 218px;
       }
-    }
-    button {
-      display: none;
     }
   }
 }
@@ -859,7 +878,7 @@ body {
   margin-right: 40px;
   @media (max-width: $screen-md-max) {
   }
-  @media (max-width: $screen-sm) {
+  @media (max-width: $screen-sm-max) {
     margin-right: 15px;
   }
 }
@@ -975,7 +994,7 @@ body {
     margin-bottom: 13px;
   }
   .flickity-page-dots {
-    bottom: -16px;
+    bottom: -147px;
     .dot {
       width: 158px;
     }
@@ -1005,7 +1024,7 @@ body {
     margin-bottom: 8px;
   }
   .flickity-page-dots {
-    bottom: -16px;
+    bottom: -138px;
     .dot {
       width: 154px;
       margin-right: 5px;
@@ -1049,7 +1068,7 @@ body {
     margin-bottom: 8px;
   }
   .flickity-page-dots {
-    bottom: -15px;
+    bottom: -81px;
     .dot {
       width: 77px;
       margin-right: 26px;
@@ -1061,19 +1080,19 @@ body {
     margin-right: 0;
   }
 }
-@media (max-width: 385px) and (min-width: 321px) {
-  .carousel-nav {
-    .carousel-cell {
-      margin-right: calc(15px + (40 - 15) * ((100vw - 321px) / (385 - 321)));
-    }
-  }
-  .flickity-page-dots {
-    .dot {
-      margin-right: calc(1px + (19 - 1) * ((100vw - 321px) / (385 - 321)));
-    }
-  }
-}
-@media (max-width: $screen-sm) {
+// @media (max-width: 385px) and (min-width: 321px) {
+//   .carousel-nav {
+//     .carousel-cell {
+//       margin-right: calc(15px + (40 - 15) * ((100vw - 321px) / (385 - 321)));
+//     }
+//   }
+//   .flickity-page-dots {
+//     .dot {
+//       margin-right: calc(1px + (19 - 1) * ((100vw - 321px) / (385 - 321)));
+//     }
+//   }
+// }
+@media (max-width: $screen-sm-max) {
   .flickity-page-dots {
     .dot {
       width: 77px;
@@ -1427,6 +1446,7 @@ body {
 /// -- equipment --
 .section-inner-equipment {
   display: flex;
+  justify-content: space-between;
 }
 .section-equipments {
   li {
@@ -1465,7 +1485,7 @@ body {
   }
 
   @media (min-width: $screen-xl) {
-    min-width: 541px;
+    width: 541px;
   }
   @media (max-width: $screen-lg-max) {
     width: 457px;
@@ -1533,6 +1553,7 @@ body {
   }
   .equip_title_text {
     margin-top: 24px;
+
   }
   &-basic {
     li {
@@ -1551,7 +1572,7 @@ body {
       }
     }
     &-optimal {
-      margin-left: 28px;
+      // margin-left: 28px;
     }
   }
   @media (max-width: $screen-lg-max) {
@@ -1620,6 +1641,7 @@ body {
     }
     .section-inner-equipment {
       display: block;
+      
     }
     .section-equipments {
       min-width: 320px;

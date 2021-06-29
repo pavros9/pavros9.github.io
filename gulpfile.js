@@ -2,13 +2,13 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 
-function style () {
+function style() {
     return gulp.src("./scss/**/*.scss")
-    .pipe(sass())
-    .pipe(gulp.dest("./css"))
-    .pipe(browserSync.stream())
+        .pipe(sass())
+        .pipe(gulp.dest("./css"))
+        .pipe(browserSync.stream())
 }
-function watch () {
+function watch() {
     browserSync.init({
         server: {
             baseDir: "./"
