@@ -63,6 +63,10 @@ btnInput.forEach((btn, index) => {
 //   });
 // });
 
+///сокращение числа
+
+///сокращение числа
+
 document.onclick = function (event) {
   if (event.target.className != "choice-block__item") {
     let target = event.target;
@@ -164,6 +168,7 @@ class BankTerms extends HTMLDivElement {
   constructor() {
     super();
 
+    let mediaQuery = window.matchMedia("(max-width: 991px)");
     let bid = this.querySelector(".terms-component__bid");
     let payment = this.querySelector(".terms-component__payment");
     let button = createNewObj("a", "begin-terms__btn", "Подробнее");
@@ -174,6 +179,22 @@ class BankTerms extends HTMLDivElement {
     this.prepend(button);
     bid.prepend(textBid);
     payment.prepend(textPayment);
+    let numberSum = this.querySelector(".terms-component__sum .terms-component__title");
+    let numberStr = numberSum.innerHTML;
+    let numberOld = numberSum.cloneNode(true);
+
+    function Change(e) {
+      if (e.matches) {
+        let newNumber = numberStr.replace(/\s+/g, "");
+        let numbers = newNumber.match(/\d+/g);
+        let numberMin = String(Number(numbers[1]) / 1000000).replace(".", ",");
+        numberSum.innerHTML = numberMin;
+      } else {
+        numberSum.innerHTML = numberOld.innerHTML;
+      }
+    }
+    mediaQuery.addEventListener("change", Change);
+    Change(mediaQuery);
   }
 }
 
