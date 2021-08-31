@@ -854,7 +854,7 @@ body .visually-hidden {
 }
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .section-short_description-button {
-    background: url("../img/button.jpg");
+    background: url("/img/button.jpg");
   }
 }
 .section-short_description-button a {
@@ -1067,7 +1067,7 @@ body .visually-hidden {
 }
 
 .carousel-angle_icon {
-  background: url("./img/angle_icon.jpg") no-repeat;
+  background: url("../img/angle_icon.jpg") no-repeat;
   width: 14px;
   height: 13px;
   position: absolute;
@@ -1205,38 +1205,38 @@ body .visually-hidden {
 }
 
 .caro_main-first_house {
-  background: url("/img/home_first.webp") center no-repeat;
+  background: url("../img/home_first.webp") center no-repeat;
 }
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .caro_main-first_house {
-    background: url("/img/home_first.jpg") center no-repeat;
+    background: url("../img/home_first.jpg") center no-repeat;
   }
 }
 
 .caro_main-second_house {
-  background: url("/img/house_2.webp") no-repeat;
+  background: url("../img/house_2.webp") no-repeat;
 }
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .caro_main-second_house {
-    background: url("/img/house_2.jpg") no-repeat;
+    background: url("../img/house_2.jpg") no-repeat;
   }
 }
 
 .caro_main-third_house {
-  background: url("/img/house_3.webp") no-repeat;
+  background: url("../img/house_3.webp") no-repeat;
 }
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .caro_main-third_house {
-    background: url("/img/house_3.jpg") no-repeat;
+    background: url("../img/house_3.jpg") no-repeat;
   }
 }
 
 .caro_main-fourth_house {
-  background: url("/img/house_4.webp") no-repeat;
+  background: url("../img/house_4.webp") no-repeat;
 }
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .caro_main-fourth_house {
-    background: url("/img/house_4.jpg") no-repeat;
+    background: url("../img/house_4.jpg") no-repeat;
   }
 }
 
@@ -1245,7 +1245,7 @@ body .visually-hidden {
 }
 
 .caro_nav-first_house {
-  background: url("/img/house_1.webp") no-repeat;
+  background: url("../img/house_1.webp") no-repeat;
   background-size: contain;
   width: 169px;
   height: 114px;
@@ -1253,12 +1253,12 @@ body .visually-hidden {
 }
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .caro_nav-first_house {
-    background: url("/img/house_1.jpg") no-repeat;
+    background: url("../img/house_1.jpg") no-repeat;
   }
 }
 
 .caro_nav-second_house {
-  background: url("/img/house_2.webp") no-repeat;
+  background: url("../img/house_2.webp") no-repeat;
   background-size: contain;
   width: 132px;
   height: 90px;
@@ -1266,12 +1266,12 @@ body .visually-hidden {
 }
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .caro_nav-second_house {
-    background: url("/img/house_2.jpg") no-repeat;
+    background: url("../img/house_2.jpg") no-repeat;
   }
 }
 
 .caro_nav-third_house {
-  background: url("/img/house_3.webp") no-repeat;
+  background: url("../img/house_3.webp") no-repeat;
   background-size: contain;
   width: 138px;
   height: 90px;
@@ -1279,12 +1279,12 @@ body .visually-hidden {
 }
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .caro_nav-third_house {
-    background: url("/img/house_3.jpg") no-repeat;
+    background: url("../img/house_3.jpg") no-repeat;
   }
 }
 
 .caro_nav-fourth_house {
-  background: url("/img/house_4.webp") no-repeat;
+  background: url("../img/house_4.webp") no-repeat;
   background-size: contain;
   width: 139px;
   height: 89px;
@@ -1292,7 +1292,7 @@ body .visually-hidden {
 }
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .caro_nav-fourth_house {
-    background: url("/img/house_4.jpg") no-repeat;
+    background: url("../img/house_4.jpg") no-repeat;
   }
 }
 
@@ -1793,20 +1793,20 @@ body .visually-hidden {
 }
 
 .section-equipment-optimal_button {
-  background: url("/img/equip_button_1.webp");
+  background: url("../img/equip_button_1.webp");
 }
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .section-equipment-optimal_button {
-    background: url("/img/equip_button_1.jpg");
+    background: url("../img/equip_button_1.jpg");
   }
 }
 
 .section-equipment-basic_button {
-  background: url("/img/equip_button_2.webp");
+  background: url("../img/equip_button_2.webp");
 }
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .section-equipment-basic_button {
-    background: url("/img/equip_button_2.jpg");
+    background: url("../img/equip_button_2.jpg");
   }
 }
 
