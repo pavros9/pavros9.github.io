@@ -170,6 +170,7 @@ class BankTerms extends HTMLDivElement {
 
     let mediaQuery = window.matchMedia("(max-width: 991px)");
     let bid = this.querySelector(".terms-component__bid");
+    let titleBid = this.querySelector(".terms-component__bid .terms-component__title");
     let payment = this.querySelector(".terms-component__payment");
     let button = createNewObj("a", "begin-terms__btn", "Подробнее");
     let textBid = createNewObj("div", "terms-component__text-grey", "Ставка");
@@ -188,7 +189,7 @@ class BankTerms extends HTMLDivElement {
         let newNumber = numberStr.replace(/\s+/g, "");
         let numbers = newNumber.match(/\d+/g);
         let numberMin = String(Number(numbers[1]) / 1000000).replace(".", ",");
-        numberSum.innerHTML = numberMin;
+        numberSum.innerHTML = `до ${numberMin}млн. ₽`;
       } else {
         numberSum.innerHTML = numberOld.innerHTML;
       }
