@@ -314,3 +314,15 @@ function handleTabletChange(e) {
 mediaQuerySpoiler.addEventListener("change", handleTabletChange);
 handleTabletChange(mediaQuerySpoiler);
 //  /потом перепишу это!!
+
+class BankProgram extends HTMLDivElement {
+  constructor() {
+    super();
+
+    let btn = createNewObj("a", "bank-program__btn", "Программы");
+    btn.setAttribute("href", "#");
+    this.append(btn);
+  }
+}
+
+customElements.define("bank-program", BankProgram, { extends: "div" });

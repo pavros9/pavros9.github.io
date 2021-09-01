@@ -715,8 +715,9 @@ template {
 }
 
 .svg-logo-9-dims {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
 }
 
 .svg-points-dims {
@@ -1386,6 +1387,82 @@ main {
   font-weight: 500;
 }
 
+.banks-mortgage__container {
+  padding-bottom: 48px;
+}
+
+.banks-mortgage__components {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banks-mortgage__title {
+  color: #0f0208;
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 48px;
+}
+
+.bank-program {
+  background-color: #ffffff;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 176px;
+          flex: 0 1 176px;
+  min-height: 174px;
+  border-radius: 8px;
+  position: relative;
+  padding-top: 44px;
+  text-align: center;
+  color: #38424e;
+}
+
+.bank-program__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bank-program__title {
+  font-weight: 700;
+  font-size: 18px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.bank-program__bid {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.bank-program__btn {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 108px;
+  color: #38424e;
+  min-height: 29px;
+  border: 1px #38424e solid;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 27px;
+}
+
 .banner__img {
   min-height: 540px;
   padding: 24px;
@@ -2050,6 +2127,10 @@ main {
   .slider__buttons {
     top: 12px;
     right: 12px;
+  }
+
+  .banks-mortgage__item {
+    margin-bottom: 52px;
   }
 
   .banner__green-city {
