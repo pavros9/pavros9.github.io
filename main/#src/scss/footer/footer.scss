@@ -1,0 +1,45 @@
+.footer {
+  background-color: #1a7a67;
+  &__wrapper {
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+    @media (min-width: 1200px) {
+      padding-left: 21%;
+    }
+  }
+}
+.contacts {
+  text-align: center;
+  &__wrapper {
+    max-width: 500px;
+    margin: auto;
+    padding: 0 30px 50px 30px;
+  }
+  &__nets {
+    text-align: left;
+  }
+  &__net {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 575px) {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  }
+  &__net-link {
+    display: flex;
+    align-items: center;
+    @media (max-width: 575px) {
+      flex-direction: column;
+    }
+  }
+  &__image-net {
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,85 @@
+@import "./portfolio/portfolio.scss";
+@import "./about/about.scss";
+@import "./about-site/about-site.scss";
+
+.main-screen {
+  flex: 1 0 100%;
+  position: relative;
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @media (max-width: 575px) {
+      background: url("@img/glenn-max-575.jpg") no-repeat center/cover;
+    }
+    @media (min-width: 576px) {
+      background: url("@img/glenn.jpg") no-repeat center/cover;
+    }
+  }
+  &__text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 30px;
+    padding: 30px;
+    background: rgba($color: white, $alpha: 0.4);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    @media (max-width: 575px) {
+      width: 95%;
+      font-size: 23px;
+    }
+    @media (min-width: 576px) {
+      width: 70%;
+    }
+    @media (min-width: 1200px) {
+      transform: translate(-29%, -50%);
+      width: 50%;
+    }
+    @media (max-height: 400px) {
+      width: 95%;
+      top: 50%;
+      font-size: 25px;
+      padding: 16px;
+    }
+  }
+}
+.quote {
+  &__author {
+    text-align: right;
+  }
+}
+
+.content {
+  position: relative;
+  &__wrapper {
+    @media (min-width: 1200px) {
+      padding-left: 21%;
+    }
+  }
+}
+.wrapper-flex {
+  display: flex;
+}
+.section {
+  &__wrapper {
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 60px;
+  }
+  &__title {
+    padding: 50px 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+.link {
+  color: #2c15c5;
+  transition: color 0.4s;
+  font-weight: 500;
+  &:hover {
+    color: #9d8efb;
+  }
+}

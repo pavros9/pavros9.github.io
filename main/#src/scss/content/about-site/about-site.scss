@@ -1,0 +1,16 @@
+.about-site {
+  &__wrapper {
+    padding: 0 40px;
+  }
+  &__list {
+    text-align: center;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+  }
+  &__github {
+    margin: auto;
+    margin-top: 40px;
+  }
+}
