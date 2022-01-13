@@ -1,0 +1,23 @@
+@import "../../node_modules/image-compare-viewer/src/styles/index.scss";
+@import "./slider-before-after.scss";
+.big-description {
+  &__wrapper {
+    padding: 0 25px;
+    padding-top: 50px;
+  }
+  &__text {
+    margin-bottom: 30px;
+    font-family: "Roboto";
+    font-weight: 300;
+    @media (min-width: 1024px) {
+      max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__slider {
+    max-width: 840px;
+    margin: auto;
+  }
+}

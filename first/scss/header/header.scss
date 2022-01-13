@@ -1,0 +1,357 @@
+.header {
+  max-height: 90px;
+  position: fixed;
+  width: 100%;
+  color: white;
+  z-index: 10;
+  font-family: "Officina";
+  @media (min-width: 768px) {
+    max-width: 90px;
+    max-height: 100%;
+    height: 100%;
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    transition: max-width 0.4s;
+  }
+  @media (min-width: 1200px) {
+    max-width: 215px;
+  }
+  @media (min-width: 1920px) {
+    max-width: 290px;
+  }
+
+  &__wrapper {
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 20px;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("@img/header-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: 768px) {
+      padding: 20px 7px;
+      display: flex;
+      align-items: start;
+    }
+    @media (min-width: 1024px) {
+      justify-content: center;
+      display: block;
+    }
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: 768px) {
+      flex-direction: column;
+      height: 100%;
+    }
+    @media (min-width: 1024px) {
+      height: auto;
+      margin-bottom: 60px;
+    }
+  }
+  &__navigation {
+    text-align: center;
+    height: 0;
+    text-transform: uppercase;
+    @media (max-width: 767px) {
+      transition: height 0.4s;
+    }
+    @media (min-width: 768px) {
+      height: 100%;
+      width: 0;
+      display: none;
+      text-align: left;
+    }
+    &-open {
+      height: 320px;
+      @media (min-width: 768px) {
+        width: 320px;
+      }
+    }
+    @media (min-width: 1200px) {
+      display: block;
+      height: auto;
+      width: 100%;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__nav-list {
+    padding-top: 20px;
+    @media (min-width: 1024px) {
+    }
+  }
+
+  &__logo {
+  }
+  &__logo-image {
+    width: 76px;
+    height: 76px;
+    @media (max-width: 1023px) {
+      transition-property: width, height;
+      transition-duration: 0.4s;
+    }
+    @media (min-width: 1200px) {
+      width: 150px;
+      height: 150px;
+      display: block;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+  }
+  &__logo-text {
+    color: white;
+    text-align: center;
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+      width: 70%;
+      margin: auto;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+  &__images {
+  }
+
+  &__image {
+  }
+
+  &__portfolio {
+  }
+
+  &__about {
+  }
+
+  &__about-site {
+  }
+
+  &__contacts {
+  }
+
+  &__wrapper-burger {
+    padding: 15px;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  &__burger {
+    @media (min-width: 767px) {
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media (max-width: 1199px) {
+    &__burger {
+      display: block;
+      position: relative;
+      width: 21px;
+      height: 16.5px;
+      z-index: 3;
+      &::before,
+      &::after {
+        content: "";
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 2.5px;
+        left: 0;
+      }
+      &::before {
+        top: 0;
+        transition: all 0.4s ease 0s;
+      }
+      &::after {
+        bottom: 0;
+        transition: all 0.4s ease 0s;
+      }
+      span {
+        content: "";
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 2.5px;
+        left: 0;
+        top: 7px;
+        transition: all 0.4s ease 0s;
+      }
+      &.active::before {
+        transform: rotate(45deg);
+        top: 7px;
+      }
+      &.active::after {
+        transform: rotate(-45deg);
+        bottom: 7px;
+      }
+      &.active span {
+        transform: scale(0);
+      }
+    }
+  }
+  &__burger-text {
+    @media (max-width: 767px) {
+      display: none;
+    }
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
+  &__bottom {
+    display: none;
+    width: 100%;
+    @media (max-width: 1023px) {
+      padding-left: 20px;
+    }
+    @media (min-width: 1200px) {
+      display: block;
+    }
+  }
+  &__info {
+    padding-left: 40px;
+    white-space: nowrap;
+    @media (min-width: 1200px) {
+      padding-left: 20px;
+    }
+  }
+  &__mode {
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    font-size: 12px;
+  }
+  &__button-call {
+  }
+}
+
+.svg-logo-dims {
+}
+.navigation {
+  &__list {
+  }
+
+  &__item {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    @media (min-width: 768px) {
+      justify-content: start;
+    }
+  }
+
+  &__link {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: solid 1px transparent;
+    transition: border-color 0.4s;
+    white-space: nowrap;
+    cursor: pointer;
+    &:hover {
+      border-bottom: solid 1px white;
+    }
+  }
+}
+.lock {
+  .main {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($color: black, $alpha: 0.7);
+    }
+  }
+  .header {
+    @media (min-width: 768px) {
+      max-width: 250px;
+    }
+    &__wrapper {
+      @media (min-width: 768px) {
+        flex-direction: column;
+        justify-content: inherit;
+      }
+    }
+    &__top {
+      @media (min-width: 768px) {
+        flex-direction: row;
+        height: auto;
+        margin-bottom: 100px;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+    &__navigation {
+      @media (min-width: 768px) {
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+        padding-left: 20px;
+      }
+    }
+    &__logo {
+      @media (min-width: 768px) {
+      }
+    }
+    &__logo-image {
+      @media (min-width: 768px) {
+        width: 150px;
+        height: 150px;
+      }
+    }
+    &__wrapper-burger {
+      @media (min-width: 768px) {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transform: translate(-100%, 0px);
+        background-color: rgba($color: white, $alpha: 0);
+        transition: background-color 0.4s;
+        &:hover {
+          background-color: rgba($color: white, $alpha: 0.5);
+        }
+      }
+    }
+    &__burger {
+      margin-bottom: 0;
+    }
+    &__burger-text {
+      display: none;
+    }
+    &__info {
+      padding-left: 20px;
+      @media (min-width: 1024px) {
+        padding-left: 40px;
+      }
+    }
+
+    &__bottom {
+      @media (min-width: 768px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (max-width: 1023px) {
+      }
+    }
+  }
+}
+.button-call {
+  background: none;
+  color: white;
+  cursor: pointer;
+  &__text {
+    padding: 5px 10px;
+    display: block;
+  }
+}

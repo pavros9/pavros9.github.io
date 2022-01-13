@@ -1,0 +1,124 @@
+@import "./fonts.scss";
+@import "./normalize.scss";
+@import "./header/header.scss";
+@import "./content/content.scss";
+// @import "./footer/footer.scss";
+
+/// -- Variables --
+$screen-xs: 320px;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-exl: 1200px;
+
+$screen-xs-max: 575px;
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+$screen-lg-max: 1199px;
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+/// -- / Variables --
+
+/// --- svg sprite ---
+
+.svg-facebook-desc-dims,
+.svg-vk-desc-dims,
+.svg-odnok-desc-dims {
+  width: 35px;
+  height: 34px;
+}
+.svg-facebook-dims,
+.svg-vk-dims,
+.svg-inst-dims {
+  width: 24px;
+  height: 14px;
+}
+/// ---/ svg sprite
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.body {
+  font-size: 16px;
+  @media (max-width: 1199px) {
+    &.lock {
+      overflow: hidden;
+    }
+  }
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  @media (min-width: 768px) {
+    // display: flex;
+  }
+  @media (min-width: 1920px) {
+    display: block;
+  }
+
+  &__main {
+    @media (min-width: 768px) {
+      flex: 0 1 70%;
+    }
+  }
+  &__add {
+    @media (min-width: 768px) {
+      flex: 0 1 30%;
+    }
+    @media (min-width: 1920px) {
+      flex: none;
+    }
+  }
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

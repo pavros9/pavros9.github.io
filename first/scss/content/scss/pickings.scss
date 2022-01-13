@@ -1,0 +1,70 @@
+.pickings {
+  &__wrapper {
+    padding: 0 10px;
+    padding-top: 50px;
+    margin: auto;
+    @media (max-width: 767px) {
+      max-width: 420px;
+    }
+    @media (min-width: 768px) {
+      max-width: 450px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @media (min-width: 1024px) {
+      max-width: inherit;
+    }
+  }
+
+  &__items {
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (min-width: 1024px) {
+      max-width: 445px;
+    }
+  }
+}
+.picking {
+  &__item {
+    padding: 10px 10px;
+    font-family: "Roboto";
+    font-weight: 300;
+    &:nth-child(2n-1) {
+      background-color: rgba(242, 242, 242, 0.61);
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    padding: 10px 20px;
+    font-family: "Officina";
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__price {
+    font-family: "Officina";
+  }
+}
+.card-price {
+  color: white;
+  padding: 30px 20px;
+  font-size: 30px;
+  text-align: center;
+  &__image {
+  }
+
+  &__text {
+  }
+}

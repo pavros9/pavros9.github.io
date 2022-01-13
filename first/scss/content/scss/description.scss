@@ -1,0 +1,101 @@
+.description {
+  &__wrapper {
+    padding: 0 10px;
+    margin: auto;
+    @media (max-width: 575px) {
+      max-width: 320px;
+    }
+    @media (min-width: 576px) {
+      max-width: 400px;
+    }
+    @media (min-width: 1920px) {
+      padding: 0 30px;
+      padding-top: 30px;
+    }
+  }
+  &__links {
+  }
+
+  &__links-title {
+    margin-bottom: 10px;
+    font-family: "Roboto";
+    font-weight: 300;
+  }
+
+  &__links-image {
+    margin-bottom: 35px;
+  }
+
+  &__dimensions {
+    margin-bottom: 50px;
+    font-family: "Roboto";
+  }
+
+  &__card {
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    margin-bottom: 25px;
+    font-family: "Officina";
+  }
+
+  &__text {
+    font-family: "Roboto";
+    font-weight: 300;
+  }
+}
+
+.cut {
+  display: flex;
+  align-items: center;
+  &__image {
+  }
+
+  &__desc {
+    padding-left: 20px;
+  }
+
+  &__term {
+    font-weight: 300;
+  }
+
+  &__def {
+    font-weight: 700;
+  }
+}
+.price {
+  &__term {
+    margin-bottom: 15px;
+    font-family: "Roboto";
+    font-weight: 300;
+  }
+
+  &__def {
+    font-size: 30px;
+    font-family: "Officina";
+    color: #006022;
+  }
+}
+.button {
+  color: white;
+  min-width: 255px;
+  font-size: 22px;
+  display: block;
+  &__text {
+    padding: 20px 20px;
+    background-color: transparent;
+    transition: background-color 0.4s;
+    display: block;
+    &:hover {
+      background-color: rgba($color: rgb(12, 195, 97), $alpha: 0.4);
+      align-items: stretch;
+    }
+  }
+  &_green {
+  }
+}

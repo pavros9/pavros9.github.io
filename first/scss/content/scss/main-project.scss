@@ -1,0 +1,61 @@
+.card {
+  padding: 0 20px;
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__image {
+    width: 100%;
+  }
+}
+
+.main-project {
+  @media (min-width: 768px) {
+    flex: 0 1 70%;
+  }
+  @media (min-width: 1920px) {
+    flex: 0 1 100%;
+  }
+  &__wrapper {
+  }
+  &__top {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    font-weight: 300;
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &__title {
+    font-size: 60px;
+    color: #503314;
+  }
+  &__container {
+    @media (min-width: 1920px) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &__slider {
+  }
+
+  &__botoom {
+    display: flex;
+    justify-content: space-evenly;
+    @media (min-width: 1920px) {
+      display: block;
+    }
+  }
+
+  &__add-photo {
+    font-family: "Roboto";
+    font-weight: 300;
+    @media (min-width: 1920px) {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

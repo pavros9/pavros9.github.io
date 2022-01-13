@@ -1,0 +1,128 @@
+.report {
+  &__wrapper {
+    padding: 50px 10px;
+    margin: auto;
+    @media (min-width: 768px) {
+      max-width: 500px;
+    }
+    @media (min-width: 1024px) {
+      max-width: max-content;
+    }
+    @media (min-width: 1920px) {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+  }
+
+  &__gallery {
+    font-family: "Roboto";
+    font-weight: 300;
+    margin-bottom: 30px;
+    @media (min-width: 1024px) {
+      order: 2;
+    }
+  }
+  &__container {
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+    @media (min-width: 1920px) {
+      justify-content: center;
+    }
+  }
+  &__bottom {
+    @media (min-width: 1024px) {
+      margin-right: 20px;
+    }
+    @media (min-width: 1920px) {
+      display: flex;
+    }
+  }
+  &__add-photo {
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+  &__img {
+    width: 85%;
+  }
+  &__docs {
+  }
+  &__doc-wrapper {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "PDF";
+      padding: 5px;
+      font-size: 12px;
+      color: white;
+      background-color: #006022;
+      font-weight: 700;
+    }
+  }
+  &__doc {
+    margin-right: 10px;
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 31%);
+  }
+  &__only-photo {
+    display: none;
+    @media (min-width: 1920px) {
+      display: block;
+    }
+  }
+  &__row {
+    @media (min-width: 1920px) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+  }
+}
+.gallery {
+  &__wrapper {
+    min-height: 207px;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__area {
+    position: absolute;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    width: 60%;
+  }
+  &__button {
+    width: 33px;
+    height: 28px;
+    background: url(@img/report/gallery-icon.jpg) no-repeat center/98%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+}
+.add-photo {
+  &__img {
+    margin-bottom: 15px;
+  }
+  &__sign {
+  }
+}
+.photo-doc {
+  font-family: "roboto";
+  &:last-child {
+    display: none;
+    @media (min-width: 1920px) {
+      display: block;
+    }
+  }
+}
