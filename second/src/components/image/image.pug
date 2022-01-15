@@ -1,0 +1,5 @@
+mixin image(name, ext="jpg")
+  picture
+    source(srcset=`../../src/assets/images/${name}.webp` type="image/webp" alt=`${name}`)
+    source(srcset=`../../src/assets/images/${name}.${ext}` alt=`${name}`)
+    img(src=`../../src/assets/images/${name}.${ext}` alt=`${name}` class='image')
