@@ -1,0 +1,41 @@
+include ../svg/svg
+
+mixin header(options)
+  if !options
+    - options = {}
+  header.header
+    .header__container
+      .header__wrapper
+        .header__left
+          a.header__logo.link(href='/')
+            .header__logo-image
+              +svg('logo')
+            .header__logo-text Кайли
+        nav.header__navigation
+          ul.header__nav-list.navigation__list
+            li.header__nav-item.navigation__item
+              a.header__nav-link.navigation__link.link(href='#') Новостройки
+            li.header__nav-item.navigation__item
+              a.header__nav-link.navigation__link.link(href='#') Акции
+            li.header__nav-item.navigation__item
+              a.header__nav-link.navigation__link.link(href='#') Застройщики
+            li.header__nav-item.navigation__item
+              a.header__nav-link.navigation__link.link(href='#') Ипотека
+            li.header__nav-item.navigation__item
+              a.header__nav-link.navigation__link.link(href='#') Журнал
+            li.header__nav-item.navigation__item
+              a.header__nav-link.navigation__link.link.header__dots.dots(href='#')
+                .dots__wrapper
+                  span
+        .header__right
+          .header__like
+            .header__like-image
+              +svg('like')
+            .header__like-text  2
+          a.header__login.link(href="#")
+            .header__login-image
+              +svg('login')
+            .header__login-text  Войти
+          .header__wrapper-burger
+            .header__burger
+              span
