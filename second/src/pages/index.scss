@@ -1,0 +1,22 @@
+@import "../assets/styles/const.scss";
+body {
+  min-width: 320px;
+  font-family: "Roboto";
+  @media (max-width: 767px) {
+    &.lock {
+      overflow: hidden;
+    }
+  }
+}
+.banks {
+  &__wrapper {
+    padding: 10px;
+  }
+  &__item {
+    margin-bottom: 10px;
+  }
+}
+.main {
+  background-color: $backColor;
+  padding-top: 65px;
+}
