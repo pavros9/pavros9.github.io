@@ -1,0 +1,142 @@
+@import "../../assets/styles/const.scss";
+.bank-info {
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  &__wrapper {
+    padding: 12px;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+      flex: 0 0 35%;
+      justify-content: start;
+      overflow: hidden;
+    }
+  }
+  &__main-info {
+    white-space: nowrap;
+    min-width: 210px;
+    margin-right: 14px;
+    @media (min-width: 768px) {
+      order: 2;
+      margin-right: 0;
+      min-width: auto;
+      overflow: hidden;
+    }
+  }
+  &__logo {
+    .logo {
+      border-radius: 4px;
+    }
+    @media (min-width: 768px) {
+      order: 1;
+      margin-right: 12px;
+    }
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__subtitle {
+    margin: 0;
+    font-weight: normal;
+  }
+  &__bottom {
+    width: 100%;
+    @media (min-width: 768px) {
+      flex: 0 0 50%;
+    }
+  }
+  &__button {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      flex: 0 0 15%;
+      justify-content: flex-end;
+    }
+  }
+  &__title-conditions {
+    text-align: left;
+    color: $grey;
+    @media (min-width: 768px) {
+      display: none;
+    }
+    .bank-info__item {
+      font-weight: 400;
+    }
+  }
+  &__conditions {
+    @media (min-width: 768px) {
+      align-items: flex-start;
+      display: flex;
+      width: 100%;
+    }
+    .bank-info__item {
+      font-weight: 500;
+      @media (min-width: 768px) {
+        vertical-align: top;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  &__title-bid {
+  }
+  &__bid {
+    &::before {
+      content: "от";
+      margin-right: 3px;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+    @media (min-width: 768px) {
+      order: 2;
+    }
+  }
+  &__sum {
+    display: flex;
+    &::before {
+      content: "до";
+      margin-right: 3px;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+    &::after {
+      content: "млн. ₽";
+      display: block;
+      padding-left: 3px;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+    @media (min-width: 768px) {
+      order: 1;
+      margin-bottom: 8px;
+    }
+  }
+  &__payment {
+    @media (min-width: 768px) {
+      order: 3;
+    }
+  }
+  &__term {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      font-size: 12px;
+      color: $grey;
+    }
+  }
+}

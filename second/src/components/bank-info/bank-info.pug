@@ -1,0 +1,28 @@
+include ../svg/svg
+include ../button/button
+
+mixin bank-info(options)
+  if !options
+    - options = {}
+  .bank-info
+    .bank-info__wrapper
+      .bank-info__top
+        .bank-info__main-info
+          h3.bank-info__title #{options.title}
+          h4.bank-info__subtitle #{options.subtitle}
+        .bank-info__logo
+          +svg(options.logo)
+      table.bank-info__bottom
+        tr.bank-info__title-conditions
+          th.bank-info__item.bank-info__title-bid  Ставка
+          th.bank-info__item.bank-info__title-sum  Сумма
+          th.bank-info__item.bank-info__title-payment  Платеж
+        tr.bank-info__conditions
+          td.bank-info__item.bank-info__bid #{options.bid}
+          td.bank-info__item.bank-info__box
+            .bank-info__sum #{options.sum}
+            .bank-info__term #{options.term}
+          td.bank-info__item.bank-info__payment #{options.payment}
+      .bank-info__button
+        +button({tag: 'a', href: '#', text:'Подробнее'})
+        
