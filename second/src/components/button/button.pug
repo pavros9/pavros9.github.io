@@ -1,0 +1,17 @@
+mixin button(options)
+  if !options
+    - options = {}
+  -
+    var classes = ''
+    classes += options.theme ? ' button_' + options.theme : ''
+    classes += options.type ? ' button_' + options.type : ''
+    classes += options.size ? ' button_' + options.size : ''
+
+
+  case options.tag
+    when 'a'
+      a.button(class=classes, href=options.href, onclick='return false')= options.text || 'Ссылка'  
+    when 'button'
+      button.button(class=classes)= options.text || 'Button'  
+
+    
