@@ -1,0 +1,10 @@
+@import "../../assets/styles/const.scss";
+
+.link {
+  text-decoration: none;
+  transition: color 0.4s;
+  color: $dark;
+  &:hover {
+    color: $green;
+  }
+}
