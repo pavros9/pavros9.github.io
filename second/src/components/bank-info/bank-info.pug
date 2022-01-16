@@ -1,4 +1,4 @@
-include ../svg/svg
+include ../icon/icon
 include ../button/button
 
 mixin bank-info(options)
@@ -11,7 +11,7 @@ mixin bank-info(options)
           h3.bank-info__title #{options.title}
           h4.bank-info__subtitle #{options.subtitle}
         .bank-info__logo
-          +svg(options.logo)
+          +icon({name: options.logo})
       table.bank-info__bottom
         tr.bank-info__title-conditions
           th.bank-info__item.bank-info__title-bid  Ставка
