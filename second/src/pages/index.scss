@@ -1,9 +1,11 @@
 @import "../assets/styles/const.scss";
-body {
+// @import "../assets/fonts/fonts.scss";
+
+.body {
   min-width: 320px;
   font-family: "Roboto";
   @media (max-width: 767px) {
-    &.lock {
+    &_lock {
       overflow: hidden;
     }
   }
