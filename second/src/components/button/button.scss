@@ -9,6 +9,7 @@
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 5px 10px;
   max-height: 32px;
   box-sizing: border-box;
@@ -22,4 +23,29 @@
   &_no-bordered {
     border: none;
   }
+  &_green {
+    background-color: $green;
+    transition: background-color 0.4s;
+    &:hover {
+      background-color: rgb(40, 211, 126);
+    }
+  }
+  &_with-counter {
+    min-height: 54px;
+    .button__text {
+      margin-right: 4px;
+      color: white;
+    }
+  }
+}
+.counter {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: $counterColor;
+  font-size: 10px;
+  color: white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }

@@ -3,15 +3,19 @@ mixin button(options)
     - options = {}
   -
     var classes = ''
-    classes += options.theme ? ' button_' + options.theme : ''
-    classes += options.type ? ' button_' + options.type : ''
-    classes += options.size ? ' button_' + options.size : ''
+    classes += options.colorBack ? ' button_' + options.colorBack : ''
+    //- classes += options.size ? ' button_' + options.size : ''
+    classes += options.withCounter ? ' button_' + options.withCounter : ''
+    classes += options.noBordered ? ' button_' + options.noBordered : ''
+
 
 
   case options.tag
     when 'a'
       a.button(class=classes, href=options.href, onclick='return false')= options.text || 'Ссылка'  
     when 'button'
-      button.button(class=classes)= options.text || 'Button'  
-
-    
+      button.button(class=classes, type=options.type, value = options.value)
+        .button__text=options.text || 'Button'
+          if (options.withCounter)
+        .button__counter.counter
+          block
