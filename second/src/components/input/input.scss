@@ -1,0 +1,51 @@
+@import "../../assets/styles/const.scss";
+.input {
+  position: relative;
+  display: inline-flex;
+  display: block;
+
+  &:hover {
+    .input__main {
+      border: 1px solid black;
+    }
+  }
+  &__text {
+    font-size: 10px;
+    font-weight: 500;
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 12px;
+    color: $dark;
+    transition: color 0.4s;
+  }
+  &__main {
+    min-height: 54px;
+    box-sizing: border-box;
+    border: 1px solid $borderInputColor;
+    border-radius: 4px;
+    padding: 21px 12px 12px 12px;
+    transition: border 0.4s;
+    width: 100%;
+    &::placeholder {
+      color: $grey;
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid black;
+      & + .input__text {
+        color: black;
+      }
+    }
+  }
+  &__main[type="number"]::-webkit-outer-spin-button,
+  &__main[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
+    &:hover,
+    &:focus {
+      -moz-appearance: number-input;
+    }
+  }
+}
