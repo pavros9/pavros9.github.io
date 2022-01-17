@@ -1,0 +1,21 @@
+include ../input/input
+include ../icon/icon
+
+mixin dropdown(options)
+
+  if !options
+    - options = {}
+  -
+    var classes = ''
+    classes += options.addBlock ? ' dropdown_' + options.addBlock : ''
+
+  .dropdown(class=classes)
+    .dropdown__main
+      if options.addBlock
+        .dropdown__add-input
+          +input({type: options.typeAdd, value: options.valueAdd, label: options.labelAdd, name: options.nameAdd})
+      +input({type: options.type, value: options.value, label: options.label, name: options.name})
+      .dropdown__button
+        +icon({name: 'arrow'})
+    .dropdown__content
+      block
