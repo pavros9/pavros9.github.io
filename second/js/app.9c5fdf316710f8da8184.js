@@ -7,29 +7,6 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-document.addEventListener("resize", function (event) {
-  if (event.target.closest(".bank-info")) {
-    console.log("Yes");
-  }
-});
-var oldBankSums = document.querySelectorAll(".bank-info__sum"); // oldBankSums.forEach((item) => {
-//   console.log(item.innerHTML);
-// });
-
-window.addEventListener("resize", function (event) {
-  if (window.matchMedia("(min-width: 768px)").matches) {// oldBankSums.forEach((oldBankSum) => {
-    //   const oldValueBankSum = oldBankSum.innerHTML;
-    //   const numSum = Number(oldBankSum.textContent);
-    //   const numSumMl = numSum * 10 ** 6;
-    //   const sumMl = new Intl.NumberFormat("ru-RU").format(numSumMl);
-    //   oldBankSum.innerHTML = sumMl;
-    // });
-  } else {// oldBankSums.forEach((oldBankSum) => {
-    //   const oldValueBankSum = oldBankSum.innerHTML;
-    //   oldBankSum.innerHTML = oldValueBankSum;
-    // });
-  }
-});
 
 /***/ }),
 
@@ -704,4 +681,4 @@ requireAll(__webpack_require__(695));
 
 /******/ })()
 ;
-//# sourceMappingURL=app.95b13966a7cbd0932d6d.js.map
+//# sourceMappingURL=app.9c5fdf316710f8da8184.js.map
