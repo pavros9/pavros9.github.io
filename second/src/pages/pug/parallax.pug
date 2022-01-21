@@ -1,0 +1,63 @@
+section.parallax.section
+        .parallax__wrapper
+          +parallax-block({name: 'parallax', 
+                          ext: 'png'})
+            .parallax__main
+              .parallax__top
+                .parallax__left
+                  +image({name: 'green-city', 
+                          ext: 'png'})
+                .parallax__right
+                  .parallax__ad
+                    +button({tag: 'a', 
+                             text: 'Реклама', 
+                             withIcon: 'ad', 
+                             noBordered: 'no-bordered'})
+                  span.parallax__add-info
+                    | Проектная декларация на сайте наш.дом.рф Застройщик ООО «Инвестцентр»
+              .parallax__box-content
+                .parallax__main-content
+                  .parallax__term Строится до 3 кв. 2022 г.
+                  h2.parallax__title ЖК Зеленый город
+                  span.parallax__location Вологда, Центр, Рыбинская 41
+                  ul.parallax__way
+                    li.parallax__way-item Красносельская
+                    li.parallax__way-item.parallax__way-item_no-active
+                      +icon({name: 'onfoot', 
+                            text: '16 мин.'})
+                    li.parallax__way-item.parallax__way-item_no-active 
+                      +icon({name: 'bus', 
+                             text: '4 мин.'})
+                  table.parallax__table.table-info
+                    tr.table-info__row
+                      td.table-info__column 1-комн.
+                      td.table-info__column  от 32м²
+                      td.table-info__column от 3100000 ₽
+                    tr.table-info__row.table-info__row_no-active
+                      td.table-info__column 2-комн.
+                      td.table-info__column  от 32м²
+                      td.table-info__column Распроданны
+                    tr.table-info__row
+                      td.table-info__column 3-комн.
+                      td.table-info__column  от 32м²
+                      td.table-info__column от 3100000 ₽
+                    tr.table-info__row 
+                      td.table-info__column 4-комн.
+                      td.table-info__column  от 32м²
+                      td.table-info__column от 3100000 ₽
+                    tr.table-info__row 
+                      td.table-info__column Студии
+                      td.table-info__column  от 32м²
+                      td.table-info__column от 3100000 ₽
+                  .parallax__buttons
+                    .parallax__show
+                      +button({tag: 'button', 
+                              text: 'Показать телефон', 
+                              withIcon: 'phone', 
+                              size: 'big', 
+                              colorBack: 'ocher', 
+                              noBordered: 'no-bordered'})
+                    .parallax__more
+                      +button({tag: 'a', 
+                              text: 'Подробнее', 
+                              size: 'big'})

@@ -1,0 +1,215 @@
+include ../../components/tabs/tabs
+
+section.apartments.section
+  .apartments__wrapper.section__container
+    h2.apartments__title.visually-hidden Дома
+    .apartments__sections
+      +tabs()
+        +tabs-nav()
+          +tab-title({href: 'house-search_1', active: 'active'})
+            .apartments__title-section Рекомендованные ЖК
+          +tab-title({href: 'house-search_2'})
+            .apartments__title-section Популярные новостройки
+          +tab-title({href: 'house-search_3', noDisplay: 'no-display'})
+            .apartments__title-section Аккредитованные новостройки
+          +tab-title({href: 'house-search_4', noDisplay: 'no-display'})
+            .apartments__title-section Самые обсуждаемые
+        +tabs-content()
+          +tab-content({id: 'house-search_1', show: 'show'})
+            .apartments__section
+              .apartments__item
+                +house-card({name: 'house_1', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_2', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_3', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_4', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_2', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_3', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_1', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_4', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+          +tab-content({id: 'house-search_2'})
+            .apartments__section
+              .apartments__item
+                +house-card({name: 'house_4', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_3', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_2', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_3', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_1', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_2', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+          +tab-content({id: 'house-search_3', noDisplay: 'no-display'})
+            .apartments__section
+              .apartments__item
+                +house-card({name: 'house_1', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_3', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_4', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+          +tab-content({id: 'house-search_4', noDisplay: 'no-display'})
+            .apartments__section
+              .apartments__item
+                +house-card({name: 'house_1', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })
+              .apartments__item
+                +house-card({name: 'house_4', 
+                            ext: 'png',
+                            title: 'ЖК Резеденция парк',
+                            location: 'Вологда, Центр, Окружное шоссе 23',
+                            sum: 'от 75 000 ₽ за м²',
+                            metro: 'Красносельская',
+                            onfoot: '16 мин.',
+                            readyStatus: true,
+                            })

@@ -1,0 +1,10 @@
+include ../image/image 
+
+mixin parallax-block(options)
+  if !options
+    - options = {}
+  .parallax-block
+    .parallax-block__container.ibg
+      +image({name: options.name, ext: options.ext, isBack: true})
+    .parallax-block__content
+      block

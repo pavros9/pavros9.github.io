@@ -1,0 +1,28 @@
+.slider {
+  position: relative;
+  &__container {
+    width: 100%;
+    overflow: hidden;
+  }
+  &__track {
+    display: flex;
+    transition: 1.5s;
+  }
+  &__item {
+    min-height: 360px;
+    min-width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  &__buttons {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+  &__btn-prev {
+    margin-right: 8px;
+  }
+  &__btn-next {
+  }
+}

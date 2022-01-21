@@ -1,0 +1,28 @@
+.banks-before {
+  &__wrapper.section__container {
+    padding-top: 24px;
+  }
+  &__top {
+    display: none;
+    font-size: 12px;
+    color: $grey;
+    margin-bottom: 4px;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &__top-item {
+    flex: 0 0 16%;
+    &:first-child {
+      flex: 0 0 35.7%;
+    }
+  }
+  &__items {
+    & > * {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

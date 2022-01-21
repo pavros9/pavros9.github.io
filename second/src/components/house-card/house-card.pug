@@ -1,0 +1,24 @@
+include ../icon/icon
+include ../image/image
+
+mixin house-card(options)
+  if !options
+    - options = {}
+  .house-card
+    .house-card__wrapper
+      .house-card__top.ibg
+        +image({name: options.name, ext: options.ext, isBack: true})
+        .house-card__like
+          +icon({name: 'like-grey'})
+      .house-card__bottom
+        .house-card__status
+          h4.house-card__title=options.title
+          if options.readyStatus
+            +icon({name: 'active-green'})
+        span.house-card__location=options.location
+        ul.house-card__way.way
+          li.house-card__way-metro.way__metro=options.metro
+          li.house-card__way-onfoot.way__onfoot
+            +icon({name: 'onfoot-grey'})
+            .way__onfoot-text=options.onfoot
+        span.house-card__sum=options.sum

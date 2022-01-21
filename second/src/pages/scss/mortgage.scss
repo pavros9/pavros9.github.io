@@ -1,0 +1,33 @@
+.mortgage {
+  &__wrapper {
+  }
+  &__title {
+    margin-bottom: 8px;
+    @media (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (min-width: 1200px) {
+      padding-top: 48px;
+    }
+  }
+  &__item {
+    flex: 0 0 47.5%;
+    margin-bottom: 16px;
+    position: relative;
+    @media (min-width: 576px) {
+      flex: 0 0 31.5%;
+    }
+    @media (min-width: 768px) {
+      flex: 0 0 15.5%;
+    }
+  }
+  &__more {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,15 @@
+.banks-after {
+  &__wrapper.section__container {
+    padding-top: 12px;
+  }
+  &__items {
+    margin-bottom: 24px;
+  }
+  &__item {
+    margin-bottom: 12px;
+  }
+  &__more {
+    display: flex;
+    justify-content: center;
+  }
+}

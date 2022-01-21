@@ -35,6 +35,8 @@
   &__logo {
     .logo {
       border-radius: 4px;
+      width: 48px;
+      height: 48px;
     }
     @media (min-width: 768px) {
       order: 1;
@@ -118,7 +120,7 @@
       display: block;
       padding-left: 3px;
       @media (min-width: 768px) {
-        display: none;
+        content: "000 000₽";
       }
     }
     @media (min-width: 768px) {

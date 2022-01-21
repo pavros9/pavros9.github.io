@@ -1,0 +1,235 @@
+@import "../../assets/styles/const.scss";
+
+.footer {
+  background-color: $backFooter;
+  color: white;
+  &__wrapper.section__container {
+    padding: 56px 16px 32px 16px;
+    @media (min-width: 992px) {
+      padding-bottom: 56px;
+    }
+  }
+  &__top {
+    margin-bottom: 32px;
+  }
+  &__nav {
+    border-bottom: 1px solid rgba(153, 153, 153, 0.24);
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    margin-bottom: 16px;
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+  .tabs {
+    &__nav {
+    }
+    &__content {
+      margin: 0;
+      padding-top: 24px;
+    }
+    &__link {
+      margin-right: 8px;
+      &:hover {
+        color: $green;
+        font-weight: 500;
+        opacity: 1;
+      }
+      color: $backColor;
+      opacity: 0.72;
+      padding-bottom: 20px;
+      font-weight: 500;
+      transition-duration: 0.4s;
+      transition-property: opacity, color;
+
+      &_active {
+        border-bottom: 4px solid $green;
+        color: $green;
+        opacity: 1;
+      }
+    }
+    &__pane {
+      @media (min-width: 576px) {
+        flex-wrap: wrap;
+        &_show {
+          display: flex;
+        }
+
+        @media (min-width: 768px) {
+          .spoiler {
+            flex: 0 0 47%;
+          }
+        }
+      }
+      .footer__tab {
+        @media (min-width: 575px) {
+          &:nth-child(1) {
+            flex: 0 0 50%;
+          }
+          &:nth-child(2) {
+            flex: 0 0 50%;
+          }
+        }
+        @media (min-width: 768px) {
+          &:nth-child(1) {
+            flex: 0 0 26%;
+          }
+          &:nth-child(2) {
+            flex: 0 0 27%;
+          }
+        }
+      }
+    }
+  }
+  &__tab {
+    margin-bottom: 24px;
+    @media (min-width: 576px) {
+      box-sizing: border-box;
+      margin-bottom: 0;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+    @media (min-width: 768px) {
+      padding-left: 10px;
+    }
+    @media (min-width: 1200px) {
+      padding-left: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__tab-title {
+  }
+  &__tab-item {
+    margin-bottom: 8px;
+    font-size: 14px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &_title {
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+  &__confidentiality {
+    padding: 24px 0;
+    font-size: 12px;
+    color: #999999;
+    border-top: 1px solid rgba(153, 153, 153, 0.24);
+    border-bottom: 1px solid rgba(153, 153, 153, 0.24);
+  }
+  &__confidentiality-item {
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__bottom {
+    padding-top: 32px;
+    @media (min-width: 576px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media (min-width: 992px) {
+      align-items: center;
+    }
+  }
+  &__logo {
+    margin-bottom: 24px;
+    font-weight: 700;
+    @media (min-width: 576px) {
+      margin-bottom: 0;
+    }
+    .logo {
+      margin-right: 4px;
+    }
+  }
+  &__cooperation {
+    margin-bottom: 16px;
+    @media (min-width: 576px) {
+      margin-bottom: 0;
+    }
+    @media (min-width: 992px) {
+      display: flex;
+    }
+    @media (min-width: 1200px) {
+    }
+  }
+  &__cooperation-item {
+    margin-bottom: 12px;
+    @media (min-width: 768px) {
+      margin-right: 20px;
+    }
+    @media (min-width: 992px) {
+      margin-bottom: 0;
+    }
+    @media (min-width: 1200px) {
+      margin-right: 40px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+  }
+  &__tab-item,
+  &__cooperation-item,
+  &__logo,
+  &__connection {
+    & > .link {
+      color: $backColor;
+    }
+  }
+  &__connection {
+    .logo {
+      margin-right: 4px;
+    }
+  }
+  .spoiler {
+    @media (min-width: 576px) {
+      &__title._active + div,
+      &__text._slide {
+        display: flex;
+      }
+      &._init {
+        padding-top: 10px;
+      }
+    }
+
+    &__title {
+      background-color: transparent;
+      border: none;
+      color: $green;
+      transition: color 0.4s;
+      padding-left: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      @media (min-width: 768px) {
+        display: none;
+      }
+      &:hover {
+        color: rgb(26, 170, 45);
+      }
+    }
+    &__text {
+      @media (min-width: 768px) {
+        display: flex;
+        .footer__tab {
+          &:nth-child(1) {
+            flex: 0 0 54%;
+          }
+          &:nth-child(2) {
+            flex: 0 0 46%;
+          }
+        }
+      }
+    }
+  }
+}

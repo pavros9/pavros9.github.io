@@ -1,0 +1,24 @@
+section.banks-before.section
+        .banks-before__wrapper.section__container
+          ul.banks-before__top
+            li.banks-before__top-item Название программы / Банк
+            li.banks-before__top-item Сумма кредита
+            li.banks-before__top-item Мин, ставка
+            li.banks-before__top-item Платеж
+          .banks-before__items       
+            .banks__item
+              +bank-info({title: 'Льготная ипотека на новостройка', 
+                        subtitle: 'Банк ДомРФ', 
+                        logo: 'banks-logo--logo_1', 
+                        bid: '3,99%', 
+                        sum: '12', 
+                        payment: '9 082₽',
+                        term: 'Cрок кредита неизвестен'})
+            .banks__item
+              +bank-info({title: 'Семейная ипотека', 
+                        subtitle: 'Банк ДомРФ', 
+                        logo: 'banks-logo--logo_2', 
+                        bid: '3,99%', 
+                        sum: '12', 
+                        payment: '9 082₽',
+                        term: 'На срок до 30 лет'})

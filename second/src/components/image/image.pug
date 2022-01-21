@@ -1,5 +1,11 @@
-mixin image(name, ext="jpg")
+mixin image(options)
+  if !options
+    - options = {}
+  -
+    var classes = ''
+    classes += options.isBack ? ' img' : ''
+    
   picture
-    source(srcset=`../../src/assets/images/${name}.webp` type="image/webp" alt=`${name}`)
-    source(srcset=`../../src/assets/images/${name}.${ext}` alt=`${name}`)
-    img(src=`../../src/assets/images/${name}.${ext}` alt=`${name}` class='image')
+    source(srcset=`../../src/assets/images/${options.name}.webp` type="image/webp")
+    source(srcset=`../../src/assets/images/${options.name}.${options.ext}`)
+    img(src=`../../src/assets/images/${options.name}.${options.ext}` alt=`${options.name}` class=classes).image

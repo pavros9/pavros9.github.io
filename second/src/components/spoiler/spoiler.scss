@@ -1,0 +1,8 @@
+.spoiler {
+  &._init .spoiler__title {
+    cursor: pointer;
+  }
+  &._init {
+    width: 100%;
+  }
+}

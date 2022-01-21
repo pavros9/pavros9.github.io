@@ -3,10 +3,14 @@
 .dropdown {
   position: relative;
   display: block;
+  .input {
+    border: none;
+    .input__main {
+    }
+  }
   &_show {
     .input__main {
       border-radius: 4px 4px 0 0;
-      border: 1px solid black;
     }
     .dropdown__content {
       visibility: visible;
@@ -52,7 +56,7 @@
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 1px solid $borderInputColor;
     border-radius: 0 0 4px 4px;
     z-index: 1;
   }
@@ -64,11 +68,18 @@
     height: 24px;
     transform: translate(0, -50%);
     border-radius: 50%;
-    background-color: $backArrow;
+    background-color: $backColor;
     display: flex;
     justify-content: center;
-    &:focus {
-      background-color: red;
+    cursor: pointer;
+  }
+  &__add-input {
+    .input {
+      &:hover {
+        .input__main {
+          border-right: none;
+        }
+      }
     }
   }
 }

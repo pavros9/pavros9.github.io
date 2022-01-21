@@ -1,0 +1,17 @@
+.main-bottom {
+  &__wrapper.section__container {
+    border-top: 1px solid rgba(120, 133, 155, 0.32);
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  &__title.section__title {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  &__text {
+    font-size: 12px;
+    color: $dark;
+    line-height: 18px;
+    margin: 0;
+  }
+}

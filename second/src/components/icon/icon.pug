@@ -1,8 +1,9 @@
 mixin icon(options)
   if !options
     - options = {}
-  .icon
-    .icon__image
+  span.icon
+    span.icon__image
       img(src=`../../src/assets/svgsprite/stack/svgsprite.svg#${options.name}` class=`svg-${options.name}-dims` alt=`${options.name}`).logo
-    .icon__text= options.text
+    if options.text
+      span.icon__text= options.text
     

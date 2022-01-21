@@ -1,0 +1,85 @@
+.apartments {
+  &__wrapper.section__container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  &__title {
+  }
+  &__sections {
+  }
+  &__section {
+    @media (min-width: 576px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -6px;
+    }
+  }
+  &__item {
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (min-width: 576px) {
+      padding: 0 6px;
+      flex: 0 1 50%;
+      box-sizing: border-box;
+    }
+    @media (min-width: 768px) {
+      flex: 0 1 33.33%;
+    }
+    @media (min-width: 1200px) {
+      flex: 0 1 25%;
+    }
+  }
+  .house-card {
+    background-color: transparent;
+    transition: background-color 0.4s;
+    @media (min-width: 768px) {
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
+  .tabs {
+    &__content {
+    }
+    &__nav {
+      border-bottom: 1px solid #cdd3dd;
+      margin-top: 0;
+      margin-bottom: 16px;
+      li:last-child {
+        margin-right: 0;
+      }
+    }
+    &__link {
+      margin-right: 2px;
+      font-size: 14px;
+      @media (min-width: 576px) {
+        margin-right: 10px;
+      }
+      &:hover {
+        color: $dark;
+        opacity: 1;
+      }
+
+      transition-duration: 0.4s;
+      transition-property: color, opacity;
+      color: $dark;
+      opacity: 0.72;
+      font-weight: 500;
+      padding-bottom: 14px;
+      &_active {
+        border-bottom: 4px solid $dark;
+        opacity: 1;
+      }
+    }
+    &__link,
+    &__pane {
+      &_no-display {
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

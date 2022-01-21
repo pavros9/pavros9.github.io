@@ -1,0 +1,36 @@
+section.selection.section
+        .selection__wrapper.section__container
+          h2.selection__title Ипотека на новостройки в Вологде
+          p.selection__text Подберите лучшее ипотечное предложения на покупку квартиры в новостройках Вологды
+
+          form.selection__form.form(id="form" method="GET" action="#")
+            .form__wrapper
+              .selection__form-item.form__sum
+                +input({type: 'number', 
+                        label: 'Стоимость квартиры, ₽', 
+                        name: 'sum', 
+                        placeholder: 'Любая'})
+              .selection__form-item.form__fee
+                .form__fee-left
+                  +dropdown({addBlock: 'with-add-block', 
+                            typeAdd: 'number', 
+                            nameAdd: 'fee',
+                            valueAdd: '0', 
+                            type: 'text', 
+                            value: '10%', 
+                            labelAdd: 'Первый взнос, ₽' })
+                    | Содержимое
+              .selection__form-item.form__term
+                +dropdown({type: 'number', 
+                          value: 'Работает', 
+                          name: 'term', 
+                          label: 'Срок, лет', 
+                          value: '10'})
+                  | Содержимое
+                +button({tag: 'button', 
+                        type: 'submit',
+                        text: 'Подобрать',
+                        noBordered: 'no-bordered', 
+                        withCounter: 'with-counter', 
+                        colorBack: 'green'})
+                  | 54

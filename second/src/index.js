@@ -1,4 +1,5 @@
 import "./assets/styles/index.scss";
+import "./assets/styles/fonts.scss";
 
 function requireAll(requireContext) {
   return requireContext.keys().map(requireContext);

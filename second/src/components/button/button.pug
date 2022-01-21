@@ -1,21 +1,37 @@
+include ../icon/icon
+
 mixin button(options)
   if !options
     - options = {}
   -
     var classes = ''
     classes += options.colorBack ? ' button_' + options.colorBack : ''
-    //- classes += options.size ? ' button_' + options.size : ''
     classes += options.withCounter ? ' button_' + options.withCounter : ''
     classes += options.noBordered ? ' button_' + options.noBordered : ''
-
-
+    classes += options.forSlider ? ' button_' + options.forSlider : ''
+    classes += options.size ? ' button_' + options.size : ''
 
   case options.tag
+
     when 'a'
-      a.button(class=classes, href=options.href, onclick='return false')= options.text || 'Ссылка'  
+      a.button(class=classes, href=options.href, onclick='return false')
+        .button__text=options.text || 'Ссылка'
+        if options.withIcon
+          .button__icon
+            +icon({name: options.withIcon})
+
     when 'button'
       button.button(class=classes, type=options.type, value = options.value)
-        .button__text=options.text || 'Button'
-          if (options.withCounter)
-        .button__counter.counter
-          block
+        if options.text
+          span.button__text=options.text || 'Button'
+
+        if options.withCounter
+          span.button__counter.counter
+            block
+
+        if options.forSlider
+          +icon({name: 'arrow'})
+        
+        if options.withIcon
+          span.button__icon
+            +icon({name: options.withIcon})

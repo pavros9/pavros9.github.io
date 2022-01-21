@@ -1,0 +1,29 @@
+include ../image/image
+include ../button/button
+
+mixin slider-item(options)
+  if !options
+    - options = {}
+  .slider-item.ibg
+    +image({name: options.name, ext: options.ext})
+    .slider-item__ad.button_with-ad
+      +button({tag: 'a', 
+            text: 'Реклама',
+            noBordered: 'no-bordered', 
+            colorBack: 'white-opacity', 
+            withIcon: 'ad'})
+    .slider-item__bottom
+      .slider-item__right
+        .slider-item__more
+          +button({tag: 'a',
+                    text: 'Подробнее',
+                    noBordered: 'no-bordered',
+                    colorBack: 'white',
+                    size: 'big'
+                        })
+        .slider-item__another=options.another
+      .slider-item__left
+        h3.slider-item__title=options.title
+        p.slider-item__description=options.description
+        span.slider-item__sum=options.sum
+        

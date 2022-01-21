@@ -1,0 +1,58 @@
+mixin tabs-nav(options)
+  if !options
+    - options = {}
+  ul.tabs__nav
+    block
+
+mixin tabs-content(options)
+  if !options
+    - options = {}
+  ul.tabs__content
+    block
+
+mixin tab-title(options)
+  if !options
+    - options = {}
+  -
+    var classes = ''
+    classes += options.active ? ' tabs__link_' + options.active : ''
+    classes += options.noDisplay ? ' tabs__link_' + options.noDisplay : ''
+
+  li
+    a.tabs__link(href=`#${options.href}` class=classes)
+      block
+
+mixin tab-content(options)
+  if !options
+    - options = {}
+  -
+    var classes = ''
+    classes += options.show ? ' tabs__pane_' + options.show : ''
+    classes += options.noDisplay ? ' tabs__pane_' + options.noDisplay : ''
+
+  li.tabs__pane(class=classes id=`${options.id}`)
+    block
+
+mixin tabs(options)
+  if !options
+    - options = {}
+  .tabs
+    block
+
+//- Use
+
+//- +tabs()
+//-   +tabs-nav()
+//-     +tab-title({href: 'search_1', active: 'active'})
+//-       | 1
+//-     +tab-title({href: 'search_2'})
+//-       | 2
+//-     +tab-title({href: 'search_3'})
+//-       | 3
+//-   +tabs-content()
+//-     +tab-content({id: 'search_1', show: 'show'})
+//-       | Содержимое 1
+//-     +tab-content({id: 'search_2'})
+//-       | Содержимое 2
+//-     +tab-content({id: 'search_3'})
+//-       | Содержимое 3            

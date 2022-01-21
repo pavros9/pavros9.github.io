@@ -1,0 +1,19 @@
+include ../image/image
+include ../button/button
+include ../slider-item/slider-item
+
+mixin slider(options)
+  if !options
+    - options = {}
+
+  .slider(class=classes)
+    .slider__container
+      .slider__track
+        block
+
+      .slider__buttons
+        .slider__btn-prev.btn-prev
+          +button({tag: 'button',forSlider: 'for-slider', noBordered: 'no-bordered'})
+        .slider__btn-next.btn-next
+          +button({tag: 'button',forSlider: 'for-slider', noBordered: 'no-bordered'})
+    

@@ -1,0 +1,1 @@
+import "./house-card.scss";

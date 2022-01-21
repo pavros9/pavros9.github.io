@@ -1,0 +1,32 @@
+section.mortgage.section
+  .mortgage__wrapper.section__container
+    h2.mortgage__title Ипотека по банкам
+    .mortgage__items
+      .mortgage__item
+        +mortgage-info({name: 'banks-logo--logo_1', 
+                        title: 'Банк Возрождение', 
+                        info: 'Ставка от 6,5%' })
+      .mortgage__item
+        +mortgage-info({name: 'banks-logo--logo_2', 
+                        title: 'Газпром Банк', 
+                        info: 'Ставка от 6,5%' })
+      .mortgage__item
+        +mortgage-info({name: 'banks-logo--logo_3', 
+                        title: 'Россельхоз Банк', 
+                        info: 'Ставка от 6,5%' })
+      .mortgage__item
+        +mortgage-info({name: 'banks-logo--logo_4', 
+                        title: 'Сбербанк', 
+                        info: 'Ставка от 6,5%' })
+      .mortgage__item
+        +mortgage-info({name: 'banks-logo--logo_5', 
+                        title: 'Ак Барс Банк', 
+                        info: 'Ставка от 6,5%' })
+      .mortgage__item
+        +mortgage-info({name: 'banks-logo--logo_6', 
+                        title: 'Альфа Банк', 
+                        info: 'Ставка от 6,5%' })
+    .mortgage__more
+      +button({tag: 'button', 
+            text: 'Показать больше', 
+            size: 'middle'})

@@ -1,0 +1,17 @@
+mixin spoiler(options)
+  if !options
+    - options = {}
+  -
+    var media = ''
+    media = options.media ? options.media : ''
+  -
+    var classes = ''
+    classes += options.colorBack ? ' button_' + options.colorBack : ''
+    classes += options.noBordered ? ' button_' + options.noBordered : ''
+    classes += options.size ? ' button_' + options.size : ''
+  .spoiler(data-spoilers=media)
+    button.button.spoiler__title(tabindex="-1" type="button" data-spoiler class=classes)=options.title
+    .spoiler__text
+      block
+
+//- media = '650,min'  or '800,max'

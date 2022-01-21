@@ -9,19 +9,29 @@
     text-align: center;
   }
   &__about-me {
-    margin-bottom: 40px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+    padding-top: 40px;
   }
 }
 .about-me {
+  &__text {
+    text-align: left;
+    padding-left: 30px;
+    li {
+      list-style-type: square;
+    }
+  }
   &__title {
     margin-bottom: 20px;
+    padding-top: 30px;
   }
 
   &__items {
     text-align: left;
+    @media (min-width: 768px) {
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
   }
 
   &__item {
@@ -34,14 +44,14 @@
   &__skills {
     @media (min-width: 576px) {
       display: flex;
+      flex-wrap: wrap;
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+      justify-content: space-around;
     }
 
     @media (min-width: 768px) {
       justify-content: center;
-    }
-    @media (min-width: 576px) and (max-width: 767px) {
-      flex-wrap: wrap;
-      justify-content: space-around;
     }
   }
   &__term {
@@ -58,8 +68,9 @@
       margin-bottom: 20px;
     }
     @media (min-width: 768px) {
-      margin-right: 20px;
-      &:last-child {
+      padding: 0 10px;
+      margin-right: 10px;
+      &:nth-child(4n) {
         margin-right: 0;
       }
     }
@@ -70,6 +81,10 @@
     }
   }
   &__certificate {
+    &.ibg {
+      background-size: 10%;
+      background-position: right;
+    }
     position: relative;
     @media (max-width: 575px) {
       padding-left: 15px;
@@ -151,6 +166,9 @@
     position: relative;
     margin-bottom: 5px;
     max-width: 152px;
+    &.ibg {
+      background-size: 65%;
+    }
     @media (max-width: 575px) {
       margin-left: auto;
       margin-right: auto;
@@ -183,10 +201,14 @@
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
   }
+  &__another {
+    min-height: 152px;
+    min-width: 152px;
+  }
   &__html {
     position: relative;
     .card-graph__second-circle {
-      stroke-dashoffset: calc(440 - (440 * 60) / 100);
+      stroke-dashoffset: calc(440 - (440 * 70) / 100);
 
       stroke: chocolate;
       stroke-width: 12px;
@@ -195,7 +217,7 @@
   &__css {
     position: relative;
     .card-graph__second-circle {
-      stroke-dashoffset: calc(440 - (440 * 60) / 100);
+      stroke-dashoffset: calc(440 - (440 * 70) / 100);
       stroke: bisque;
       stroke-width: 12px;
 
@@ -217,6 +239,22 @@
     .card-graph__second-circle {
       stroke-dashoffset: calc(440 - (440 * 40) / 100);
       stroke: seagreen;
+      stroke-width: 12px;
+    }
+  }
+  &__gulp {
+    position: relative;
+    .card-graph__second-circle {
+      stroke-dashoffset: calc(440 - (440 * 60) / 100);
+      stroke: rgb(65, 187, 243);
+      stroke-width: 12px;
+    }
+  }
+  &__webpack {
+    position: relative;
+    .card-graph__second-circle {
+      stroke-dashoffset: calc(440 - (440 * 50) / 100);
+      stroke: rgb(221, 235, 33);
       stroke-width: 12px;
     }
   }

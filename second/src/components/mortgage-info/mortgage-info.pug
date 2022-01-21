@@ -1,0 +1,13 @@
+include ../icon/icon
+include ../button/button
+
+mixin mortgage-info(options)
+  if !options
+    - options = {}
+  .mortgage-info
+    .mortgage-info__logo
+      +icon({name: options.name})
+    .mortgage-info__title=options.title
+    .mortgage-info__info=options.info
+    .mortgage-info__button
+      +button({tag: 'a', text: 'Программы'})

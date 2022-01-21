@@ -1,59 +1,36 @@
 extends ./base
+
 include ../components/header/header
 include ../components/icon/icon
 include ../components/image/image
 include ../components/bank-info/bank-info
 include ../components/button/button
+include ../components/input/input
+include ../components/dropdown/dropdown
+include ../components/slider/slider
+include ../components/slider-item/slider-item
+include ../components/mortgage-info/mortgage-info
+include ../components/parallax-block/parallax-block
+include ../components/house-card/house-card
+include ../components/tabs/tabs
+include ../components/footer/footer
 
 block title
   | Кайли
 
 block variables
 
-block content
+block header
   +header()
+block content
   main.main
-    section.banks
-      .banks__wrapper
-        .banks__item
-          +bank-info({title: 'Льготная ипотека на новостройка', 
-                      subtitle: 'Банк ДомРФ', 
-                      logo: 'banks-logo--logo_1', 
-                      bid: '3,99%', 
-                      sum: '12', 
-                      payment: '9 082₽',
-                      term: 'Cрок кредита неизвестен'})
-        .banks__item
-          +bank-info({title: 'Семейная ипотека', 
-                      subtitle: 'Банк ДомРФ', 
-                      logo: 'banks-logo--logo_2', 
-                      bid: '3,99%', 
-                      sum: '12', 
-                      payment: '9 082₽',
-                      term: 'На срок до 30 лет'})
-        .banks__item
-          +bank-info({title: 'Семейная ипотека', 
-                      subtitle: 'Банк ДомРФ', 
-                      logo: 'banks-logo--logo_3',
-                      bid: '3,99%', 
-                      sum: '12', 
-                      payment: '9 082₽',
-                      term: 'На срок до 30 лет'})
-        .banks__item
-          +bank-info({title: 'Семейная ипотека', 
-                      subtitle: 'Банк ДомРФ', 
-                      logo: 'banks-logo--logo_4',
-                      bid: '3,99%', 
-                      sum: '12', 
-                      payment: '9 082₽',
-                      term: 'На срок до 30 лет'})
-        .banks__item
-          +bank-info({title: 'Семейная ипотека', 
-                      subtitle: 'Банк ДомРФ', 
-                      logo: 'banks-logo--logo_4',
-                      bid: '3,99%', 
-                      sum: '12', 
-                      payment: '9 082₽',
-                      term: 'На срок до 30 лет'})
-        
-
+    include ./pug/selection
+    include ./pug/banks-before
+    include ./pug/slider-section
+    include ./pug/banks-after
+    include ./pug/mortgage
+    include ./pug/parallax
+    include ./pug/apartments
+    include ./pug/main-bottom
+block footer
+  +footer()

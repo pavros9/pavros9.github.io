@@ -1,0 +1,98 @@
+include ../icon/icon
+include ../tabs/tabs
+include ../spoiler/spoiler
+
+mixin footer(options)
+  if !options
+    - options = {}
+  footer.footer
+    .footer__wrapper.section__container
+      .footer__top
+        .footer__tabs
+          +tabs()
+            .footer__nav
+              h2.footer__title.section__title Поиск новостроек в Вологде
+              +tabs-nav()
+                +tab-title({href: 'search_1', active: 'active'})
+                  | По типу
+                +tab-title({href: 'search_2'})
+                  | Метро
+                +tab-title({href: 'search_3'})
+                  | Районы
+                +tab-title({href: 'search_4'})
+                  | Улицы
+            +tabs-content()
+              +tab-content({id: 'search_1', show: 'show'})
+                ul.footer__tab  
+                  li.footer__tab-item.footer__tab-item_title  Новостройки
+                  li.footer__tab-item
+                    a.link(href='##') Проверенные новостройки
+                  li.footer__tab-item
+                    a.link(href='##') Строящиеся ЖК
+                  li.footer__tab-item
+                    a.link(href='##') Сданные ЖК
+                  li.footer__tab-item
+                    a.link(href='##') Новостройки на карте
+                ul.footer__tab
+                  li.footer__tab-item.footer__tab-item_title  Популярные фильтры
+                  li.footer__tab-item 
+                    a.link(href='##') Квартиры с отделкой
+                  li.footer__tab-item 
+                    a.link(href='##') Квартиры без отделки
+                  li.footer__tab-item 
+                    a.link(href='##') Новостройки в центре
+                  li.footer__tab-item 
+                    a.link(href='##') Недорогие новостройки
+                  li.footer__tab-item 
+                    a.link(href='##') Новостройки с ипотекой
+
+                +spoiler({media: '767,max', title: "Показать больше"})
+                  ul.footer__tab 
+                    li.footer__tab-item.footer__tab-item_title  Квартиры в ЖК
+                    li.footer__tab-item 
+                      a.link(href='##') Студии
+                    li.footer__tab-item 
+                      a.link(href='##') Однокомнатные
+                    li.footer__tab-item 
+                      a.link(href='##') Двухкомнатные
+                    li.footer__tab-item 
+                      a.link(href='##') Трехкомнатные
+                    li.footer__tab-item 
+                     a.link(href='##') Четырехкомнатные и более
+                  ul.footer__tab  
+                    li.footer__tab-item.footer__tab-item_title По классу
+                    li.footer__tab-item 
+                      a.link(href='##') Эконом
+                    li.footer__tab-item 
+                      a.link(href='##') Комфорт
+                    li.footer__tab-item 
+                      a.link(href='##') Бизнес
+                    li.footer__tab-item 
+                      a.link(href='##') Элит
+              +tab-content({id: 'search_2'})
+                | Метро
+              +tab-content({id: 'search_3'})
+                | Районы
+              +tab-content({id: 'search_4'})
+                | Улицы 
+      ul.footer__confidentiality
+        li.footer__confidentiality-item
+          p  Qayli — база проверенных новостроек. Использование сайта означает согласие с Пользовательским 
+            | соглашением и Политикой конфиденциальности Qayli. Оплачивая услуги, вы принимаете Лицензионное соглашение.
+        li.footer__confidentiality-item
+          p Информация, размещенная на сайте, не является публичной офертой и предоставляется в ознакомительных целях. 
+            | Для получения подробной информации о жилых комплексах и квартирах, общайтесь в отдел продаж застройщика. Карта сайта.
+      .footer__bottom
+        .footer__logo
+          a.link(href='/')
+            +icon({name: 'logo', text: 'Qayli'})
+        ul.footer__cooperation
+          li.footer__cooperation-item 
+            a.link(href='##') Застройщикам
+          li.footer__cooperation-item 
+            a.link(href='##') Агенствам недвижимости
+          li.footer__cooperation-item 
+            a.link(href='##') Реклама на сайте
+        .footer__connection
+          a.link(href='##')
+            +icon({name: 'links', text: 'Связаться с нами'})

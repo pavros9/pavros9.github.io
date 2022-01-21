@@ -1,7 +1,9 @@
 block variables
 
 doctype html
-html(lang='en')
+
+
+html(lang='ru')
   head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
@@ -10,5 +12,7 @@ html(lang='en')
       block title
     block scripts
   body.body
-    block content
-    block footer
+    .wrapper
+      block header
+      block content
+      block footer

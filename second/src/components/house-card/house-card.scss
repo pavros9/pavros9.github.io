@@ -1,0 +1,88 @@
+@import "../../assets/styles/const.scss";
+
+.house-card {
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  &__wrapper {
+  }
+  &__top {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  &__like {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: $backColor;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      .logo {
+        transform: scale(1.3);
+      }
+    }
+    .logo {
+      transition: all 0.4s;
+    }
+  }
+  &__bottom {
+    padding: 12px;
+    padding-top: 0;
+  }
+  &__status {
+    display: flex;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: $dark;
+    margin-right: 3px;
+  }
+  &__location {
+    font-size: 14px;
+    color: $grey;
+    margin-bottom: 2px;
+  }
+  &__way {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  &__sum {
+    font-size: 18px;
+    font-weight: 700;
+    color: $dark;
+  }
+}
+
+.way {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  padding-left: 0;
+  &__metro {
+    padding-left: 12px;
+    margin-right: 4px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      border-radius: 50%;
+      background-color: #da4233;
+    }
+  }
+  &__onfoot {
+    display: flex;
+  }
+}

@@ -83,3 +83,9 @@
     color: #9d8efb;
   }
 }
+
+.lock {
+  .card-graph__base-circle {
+    z-index: 0;
+  }
+}

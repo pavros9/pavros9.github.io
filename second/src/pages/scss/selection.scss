@@ -1,0 +1,81 @@
+.selection {
+  &__wrapper.section__container {
+    padding-top: 24px;
+  }
+  &__title {
+    font-size: 28px;
+    color: $blackTitle;
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    @media (min-width: 768px) {
+      text-align: center;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    color: $dark;
+    margin-top: 0;
+    margin-bottom: 16px;
+    @media (min-width: 768px) {
+      text-align: center;
+    }
+  }
+  &__form {
+  }
+  &__form-item {
+    margin-bottom: 10px;
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form {
+  &__wrapper {
+    max-width: 995px;
+    margin: auto;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__sum {
+    @media (min-width: 768px) {
+      flex: 0 0 30%;
+    }
+  }
+  &__fee {
+    @media (min-width: 768px) {
+      flex: 0 0 30%;
+      .dropdown__add-input {
+        width: 60%;
+        & + * {
+          width: 40%;
+        }
+      }
+    }
+  }
+  &__term {
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+      flex: 0 0 37%;
+    }
+    .dropdown {
+      flex: 0 0 48%;
+      @media (min-width: 768px) {
+        flex: 0 0 45%;
+      }
+      & + * {
+        flex: 0 0 48%;
+        @media (min-width: 768px) {
+          flex: 0 0 51%;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,18 @@
 @import "../assets/styles/const.scss";
-// @import "../assets/fonts/fonts.scss";
 
+@import "./scss/selection.scss";
+@import "./scss/banks-before.scss";
+@import "./scss/slider-section.scss";
+@import "./scss/banks-after.scss";
+@import "./scss/mortgage.scss";
+@import "./scss/parallax.scss";
+@import "./scss/apartments.scss";
+@import "./scss/main-bottom.scss";
+
+html,
+body {
+  height: 100%;
+}
 .body {
   min-width: 320px;
   font-family: "Roboto";
@@ -10,15 +22,57 @@
     }
   }
 }
-.banks {
-  &__wrapper {
-    padding: 10px;
-  }
-  &__item {
-    margin-bottom: 10px;
-  }
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg > picture {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .main {
   background-color: $backColor;
   padding-top: 65px;
+  flex: 1 1 auto;
+}
+.section {
+  &__container {
+    padding: 0 16px;
+    max-width: 1136px;
+    margin: auto;
+  }
+  &__title {
+    margin-top: 0;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
